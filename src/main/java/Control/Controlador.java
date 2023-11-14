@@ -25,9 +25,11 @@ public class Controlador {
         List<String> actores = new ArrayList<>();
         Pelicula pelicula = new Pelicula("/SPIDER-MAN.mp4", "", "SpiderMan", "us", "1234", "", actores, "", "");
         reproductorMP4.reproducirPelicula(pelicula);
-        escenaPrueba = new EscenaPrueba(stage);
+        //escenaPrueba = new EscenaPrueba(stage);
+        Escena1 escena1= new Escena1(stage);
 
 
+        /*
         escenaPrueba.getMediaView().setMediaPlayer(reproductorMP4.getPeliculaReproduciendo());
         actualizarSlider();
         escenaPrueba.getMediaView().setOnMouseClicked(e ->{
@@ -54,6 +56,8 @@ public class Controlador {
                 actualizarSlider();
             }
         });
+        
+         */
     }
 
     public void actualizarSlider(){

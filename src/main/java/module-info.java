@@ -11,4 +11,6 @@ module com.example.onyxtuve {
     exports Datos;
     exports View;
     exports ReproductorMP4;
+    opens Principal to javafx.fxml;
+    exports Principal;
 }

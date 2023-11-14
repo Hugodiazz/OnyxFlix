@@ -9,14 +9,15 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class Escena1 extends Application {
+public class Escena1 {
     private String[] lista = {"Video 1", "Video 2"};
     private VBox scrollPane;
     private Label titulo;
     private VBox contenedorPrincipal;
+    private Stage stage;
 
-    @Override
-    public void start(Stage stage) {
+    public Escena1(Stage stage) {
+        this.stage = stage;
         contenedorPrincipal = new VBox();
         titulo = new Label("OnyxTube");
         titulo.setAlignment(Pos.CENTER);
@@ -27,10 +28,6 @@ public class Escena1 extends Application {
         stage.setTitle("Escena 1");
         stage.setScene(scene);
         stage.show();
-    }
-
-    public static void main(String[] args) {
-        launch(args);
     }
 
     public VBox createScrollPane(String[] content) {
