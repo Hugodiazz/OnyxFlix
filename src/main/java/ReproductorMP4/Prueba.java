@@ -19,7 +19,7 @@ public class Prueba extends Application{
     @Override
     public void start(Stage stage) throws Exception {
         reproductorMP4 = new ReproductorMP4();
-        controlador = new Controlador(reproductorMP4, stage);
+        //controlador = new Controlador(reproductorMP4, stage,datos);
         stage.show();
     }
 

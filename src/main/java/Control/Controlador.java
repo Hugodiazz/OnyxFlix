@@ -1,5 +1,6 @@
 package Control;
 
+import Datos.Datos;
 import Modelo.Pelicula;
 import ReproductorMP4.ReproductorMP4;
 import View.Escena1;
@@ -12,19 +13,20 @@ import javafx.util.Duration;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Controlador {
     private Stage stage;
     private ReproductorMP4 reproductorMP4;
     private EscenaPrueba escenaPrueba;
-    public Controlador(ReproductorMP4 reproductorMP4, Stage stage) throws MalformedURLException, URISyntaxException {
+    private Datos datos;
+    public Controlador(ReproductorMP4 reproductorMP4, Stage stage, Datos datos) throws MalformedURLException, URISyntaxException {
         this.stage = stage;
         this.reproductorMP4= reproductorMP4;
+        this.datos = datos;
 
-        List<String> actores = new ArrayList<>();
-        Pelicula pelicula = new Pelicula("/SPIDER-MAN.mp4", "", "SpiderMan", "us", "1234", "", actores, "", "");
-        reproductorMP4.reproducirPelicula(pelicula);
+
         //escenaPrueba = new EscenaPrueba(stage);
         Escena1 escena1= new Escena1(stage);
 
