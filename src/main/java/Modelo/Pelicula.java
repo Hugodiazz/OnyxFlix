@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pelicula{
+    String ruta;
+    String miniatura;
     String nombre;
     String pais;
     String anio;
@@ -13,7 +15,7 @@ public class Pelicula{
     String genero;
 
     public Pelicula(){}
-    public Pelicula(String nombre, String pais, String anio, String productora, List<String> actores, String descripcion, String genero) {
+    public Pelicula(String ruta, String miniatura, String nombre, String pais, String anio, String productora, List<String> actores, String descripcion, String genero) {
         this.nombre = nombre;
         this.pais = pais;
         this.anio = anio;
@@ -77,5 +79,21 @@ public class Pelicula{
 
     public void setGenero(String genero) {
         this.genero = genero;
+    }
+
+    public String getMiniatura() {
+        return miniatura;
+    }
+
+    public String getRuta() {
+        return ruta;
+    }
+
+    public void setMiniatura(String miniatura) {
+        this.miniatura = miniatura;
+    }
+
+    public void setRuta(String ruta) {
+        this.ruta = ruta;
     }
 }
