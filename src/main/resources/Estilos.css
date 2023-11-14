@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Alata';
+    src: url('Alata-Regular.ttf'); /* Ruta correcta al archivo TTF */
+}
+#EstiloTituloEscena1{
+    -fx-text-fill: #FFF; /* Color del texto */
+    -fx-font-family: 'Alata'; /* Familia de fuente */
+    -fx-font-size: 35px; /* Tamaño de la fuente */
+    -fx-font-style: normal; /* Estilo de la fuente */
+    -fx-font-weight: 400; /* Peso de la fuente */
+}
+
+#ColorFondoNegro{
+    -fx-background-color: #000;
+}
+
+#EstiloGeneroEscena1{
+    -fx-text-fill: #FFF; /* Color del texto */
+    -fx-font-family: 'Alata'; /* Familia de fuente */
+    -fx-font-size: 15px; /* Tamaño de la fuente */
+    -fx-font-style: normal; /* Estilo de la fuente */
+    -fx-font-weight: 400; /* Peso de la fuente */
+}
+
+#scroll-pane {
+    -fx-background-color: #000;
+}
