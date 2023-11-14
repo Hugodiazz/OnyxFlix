@@ -14,8 +14,9 @@ public class Pelicula{
     private String descripcion;
     private String genero;
 
-    public Pelicula(){}
     public Pelicula(String ruta, String miniatura, String nombre, String pais, String anio, String productora, List<String> actores, String descripcion, String genero) {
+        this.ruta = ruta;
+        this.miniatura = miniatura;
         this.nombre = nombre;
         this.pais = pais;
         this.anio = anio;

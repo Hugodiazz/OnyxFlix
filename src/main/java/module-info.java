@@ -10,4 +10,5 @@ module com.example.onyxtuve {
     opens Datos to com.fasterxml.jackson.databind;
     exports Datos;
     exports View;
+    exports ReproductorMP4;
 }
