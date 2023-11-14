@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pelicula{
-    String ruta;
-    String miniatura;
-    String nombre;
-    String pais;
-    String anio;
-    String productora;
-    List<String> actores = new ArrayList<>();
-    String descripcion;
-    String genero;
+    private String ruta;
+    private String miniatura;
+    private String nombre;
+    private String pais;
+    private String anio;
+    private String productora;
+    private List<String> actores = new ArrayList<>();
+    private String descripcion;
+    private String genero;
 
     public Pelicula(){}
     public Pelicula(String ruta, String miniatura, String nombre, String pais, String anio, String productora, List<String> actores, String descripcion, String genero) {
