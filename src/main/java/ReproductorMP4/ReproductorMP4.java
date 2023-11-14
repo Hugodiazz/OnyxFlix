@@ -30,7 +30,7 @@ public class ReproductorMP4{
     public void reproducirPelicula(Pelicula pelicula) throws URISyntaxException {
         this.peliculaActual = pelicula;
 
-        Media media = new Media(new File(pelicula.getRuta()).toURI().toString());
+        Media media = new Media(getClass().getResource(pelicula.getRuta()).toString());
         peliculaReproduciendo = new MediaPlayer(media);
         peliculaReproduciendo.play();
         peliculaReproduciendo.setVolume(volumen);

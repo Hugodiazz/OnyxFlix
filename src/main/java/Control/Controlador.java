@@ -23,7 +23,7 @@ public class Controlador {
         this.reproductorMP4= reproductorMP4;
 
         List<String> actores = new ArrayList<>();
-        Pelicula pelicula = new Pelicula("src/SPIDER-MAN.mp4", "", "SpiderMan", "us", "1234", "", actores, "", "");
+        Pelicula pelicula = new Pelicula("/SPIDER-MAN.mp4", "", "SpiderMan", "us", "1234", "", actores, "", "");
         reproductorMP4.reproducirPelicula(pelicula);
         escenaPrueba = new EscenaPrueba(stage);
 
