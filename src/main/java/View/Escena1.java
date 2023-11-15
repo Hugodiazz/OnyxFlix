@@ -29,6 +29,7 @@ public class Escena1 {
     private double xOffset = 0.0;
     private double scrollSpeed = 1.5;
     private HBox labelsContainer;
+    private Pelicula peliculaSeleccionada;
 
     public Escena1(Stage stage, List<Pelicula> peliculas){
         this.stage = stage;
@@ -95,8 +96,10 @@ public class Escena1 {
             ImageView imageView = new ImageView(new Image(pelicula.getImagen(), 275, 174, false, true));
             labelsContainer.getChildren().add(imageView);
             labelsContainer.setStyle("-fx-border-color: black; ");
+            labelsContainer.setOnMouseClicked(e ->{
+                peliculaSeleccionada = pelicula;
+            });
         }
-
         labelsContainer.addEventHandler(MouseEvent.MOUSE_PRESSED, event -> {
             xOffset = event.getSceneX();
         });
