@@ -31,13 +31,8 @@ public class Escena1 {
 
     public Escena1(Stage stage) {
         this.stage = stage;
-        contenedorPrincipal = new VBox();
-        contenedorPrincipal.setId("ColorFondoNegro");
-        contenedorTitulo = new HBox();
-        titulo = new Label("OnyxTube");
-        titulo.setId("EstiloTituloEscena1");
-        contenedorTitulo.getChildren().add(titulo);
-        contenedorTitulo.setPadding(new Insets(15));
+        contenedorPrincipal = getContenedorPrincipal();
+
         scrollPane = createScrollPane(lista);
         contenedorPrincipal.getChildren().addAll(contenedorTitulo, scrollPane);
 
@@ -75,9 +70,29 @@ public class Escena1 {
             xOffset = event.getSceneX();
             scrollPane.setHvalue(scrollPane.getHvalue() - deltaX * scrollSpeed / labelsContainer.getWidth());
         });
+
+        labelsContainer.addEventHandler(MouseEvent.MOUSE_ENTERED, event -> {
+            labelsContainer.setStyle("-fx-cursor: hand;");
+        });
+
+        labelsContainer.addEventHandler(MouseEvent.MOUSE_EXITED, event -> {
+            labelsContainer.setStyle("-fx-cursor: default;");
+        });
+
         scrollPane.setContent(labelsContainer);
         container.getChildren().addAll(tituloV,scrollPane);
         return container;
+    }
+
+    public VBox getContenedorPrincipal() {
+        contenedorPrincipal = new VBox();
+        contenedorPrincipal.setId("ColorFondoNegro");
+        contenedorTitulo = new HBox();
+        titulo = new Label("OnyxTube");
+        titulo.setId("EstiloTituloEscena1");
+        contenedorTitulo.getChildren().add(titulo);
+        contenedorTitulo.setPadding(new Insets(15));
+        return contenedorPrincipal;
     }
 
 
