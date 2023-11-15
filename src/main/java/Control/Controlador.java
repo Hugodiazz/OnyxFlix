@@ -4,6 +4,7 @@ import Datos.Datos;
 import Modelo.Pelicula;
 import ReproductorMP4.ReproductorMP4;
 import View.Escena1;
+import View.Escena2;
 import javafx.beans.property.ReadOnlyProperty;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -27,7 +28,9 @@ public class Controlador {
         this.datos = datos;
 
         //escenaPrueba = new EscenaPrueba(stage);
-        Escena1 escena1= new Escena1(stage);
+        Escena1 escena1= new Escena1(stage, datos.getPeliculas());
+        //Escena2 escena2= new Escena2(stage);
+        //escena1.createScrollPane(datos.getPeliculas());
 
 
         /*

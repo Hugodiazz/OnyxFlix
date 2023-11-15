@@ -29,34 +29,48 @@ public class Escena1 {
     private double scrollSpeed = 1.5;
     private HBox labelsContainer;
 
-    public Escena1(Stage stage) {
+    public Escena1(Stage stage, List<Pelicula> peliculas){
         this.stage = stage;
         contenedorPrincipal = getContenedorPrincipal();
 
-        scrollPane = createScrollPane(lista);
-        contenedorPrincipal.getChildren().addAll(contenedorTitulo, scrollPane);
+        ScrollPane scrollPadre = new ScrollPane();
+        contenedorPrincipal.getChildren().add(contenedorTitulo);
+        scrollPadre.setContent(contenedorPrincipal);
+        scrollPadre.setHbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
 
-        Scene scene = new Scene(contenedorPrincipal, 800, 600);
+
+        for(int i = 0; i<5; i++){
+            contenedorPrincipal.getChildren().add(createScrollPane(peliculas));
+        }
+
+
+        Scene scene = new Scene(scrollPadre, 800, 600);
         stage.setScene(scene);
 
         String cssPath = "/Estilos.css"; // Reemplaza con la ruta correcta
         scene.getStylesheets().add(cssPath);
     }
 
-    public VBox createScrollPane(String[] content) {
+    public VBox createScrollPane(List<Pelicula> peliculas) {
         VBox container = new VBox(10);
-        container.setPadding(new Insets(0,40,0,40));
-        ScrollPane scrollPane = new ScrollPane();
-        scrollPane.setFitToWidth(true);
-        scrollPane.setId("scrollPane");
-        labelsContainer = new HBox(12);
-        labelsContainer.setId("ColorFondoNegro");
+        container.setPrefWidth(950);
+        container.setPadding(new Insets(0, 40, 0, 40));
 
-        Label tituloV = new Label("Acción");
+        ScrollPane scrollPane = new ScrollPane();
+        scrollPane.setFitToWidth(false); // Establecer en false para que no se expanda más allá del ancho del padre
+        scrollPane.setMaxWidth(950); // Establecer el ancho máximo del ScrollPane
+        scrollPane.setId("scrollPane");
+        scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
+
+        HBox labelsContainer = new HBox(12);
+        labelsContainer.setId("ColorFondoNegro");
+        labelsContainer.setAlignment(Pos.TOP_LEFT); // Alinea el contenido al principio
+
+        Label tituloV = new Label("peliculas");
         tituloV.setId("EstiloGeneroEscena1");
 
-        for (String s : content) {
-            ImageView imageView = new ImageView(new Image("prueba.jpg",275,174,false,true));
+        for (Pelicula pelicula : peliculas) {
+            ImageView imageView = new ImageView(new Image(pelicula.getImagen(), 275, 174, false, true));
             labelsContainer.getChildren().add(imageView);
             labelsContainer.setStyle("-fx-border-color: black; ");
         }
@@ -80,7 +94,8 @@ public class Escena1 {
         });
 
         scrollPane.setContent(labelsContainer);
-        container.getChildren().addAll(tituloV,scrollPane);
+        container.getChildren().addAll(tituloV, scrollPane);
+
         return container;
     }
 
