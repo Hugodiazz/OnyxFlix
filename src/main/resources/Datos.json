@@ -334,6 +334,152 @@
      "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
      "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
      "genero": "Musical"
+   },
+
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Tik tik bom.png",
+     "banner": "/xd.jpg",
+     "nombre": "Tik tik bom",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Musical"
+   },
+
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Vaselina.png",
+     "banner": "/xd.jpg",
+     "nombre": "Vaselina",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Musical"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/A todos los chicos de los que me enamoré.png",
+     "banner": "/xd.jpg",
+     "nombre": "A todos los chicos de los que me enamoré",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Romantica"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Amor de calendario.png",
+     "banner": "/xd.jpg",
+     "nombre": "Amor de calendario",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Romantica"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Casate conmigo.png",
+     "banner": "/xd.jpg",
+     "nombre": "Casate conmigo",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Romantica"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Eres tu.png",
+     "banner": "/xd.jpg",
+     "nombre": "Eres tu",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Romantica"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Hasta Que Nos Volvamos A Encontrar.png",
+     "banner": "/xd.jpg",
+     "nombre": "Hasta que nos volvamos a encontrar",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Romantica"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Loco por ella.png",
+     "banner": "/xd.jpg",
+     "nombre": "Loco por ella",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Romantica"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Persuasión.png",
+     "banner": "/xd.jpg",
+     "nombre": "Persuación",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Romantica"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Rojo blanco y sangre azul.png",
+     "banner": "/xd.jpg",
+     "nombre": "Rojo blanco y sangre azul",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Romantica"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Tratamiento real.png",
+     "banner": "/xd.jpg",
+     "nombre": "Tratamiento real",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Romantica"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Yo antes de ti.png",
+     "banner": "/xd.jpg",
+     "nombre": "Yo antes de ti",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Romantica"
    }
 ]
 

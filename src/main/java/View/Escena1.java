@@ -134,7 +134,7 @@ public class Escena1 {
         contenedorPrincipal = new VBox();
         contenedorPrincipal.setId("ColorFondoNegro");
         contenedorTitulo = new HBox();
-        titulo = new Label("OnyxFlix");
+        titulo = new Label("ONYXFLIX");
         titulo.setId("EstiloTituloEscena1");
         contenedorTitulo.getChildren().add(titulo);
         contenedorTitulo.setPadding(new Insets(15,0,0,15));
