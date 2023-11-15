@@ -82,6 +82,7 @@ public class Escena1 {
         ScrollPane scrollPane = new ScrollPane();
         scrollPane.setFitToWidth(true); // Establecer en false para que no se expanda más allá del ancho del padre
         scrollPane.setId("scrollPane");
+        scrollPane.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
 
         HBox labelsContainer = new HBox(12);
         labelsContainer.setId("ColorFondoNegro");
@@ -100,6 +101,7 @@ public class Escena1 {
             labelsContainer.setOnMouseClicked(e ->{
                 peliculaSeleccionada = pelicula;
             });
+            labelsContainer.setPrefHeight(174);
         }
         labelsContainer.addEventHandler(MouseEvent.MOUSE_PRESSED, event -> {
             xOffset = event.getSceneX();
