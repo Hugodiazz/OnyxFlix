@@ -129,7 +129,7 @@
      "productora": "Marvel",
      "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
      "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
-     "genero": "SuperHeroes"
+     "genero": "Super Héroes"
    },
    {
      "ruta": "/SPIDER-MAN.mp4",
@@ -141,7 +141,7 @@
      "productora": "Marvel",
      "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
      "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
-     "genero": "SuperHeroes"
+     "genero": "Super Héroes"
    },
    {
      "ruta": "/SPIDER-MAN.mp4",
@@ -153,7 +153,7 @@
      "productora": "Marvel",
      "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
      "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
-     "genero": "SuperHeroes"
+     "genero": "Super Héroes"
    },
    {
      "ruta": "/SPIDER-MAN.mp4",
@@ -165,7 +165,7 @@
      "productora": "Marvel",
      "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
      "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
-     "genero": "SuperHeroes"
+     "genero": "Super Héroes"
    },
    {
      "ruta": "/SPIDER-MAN.mp4",
@@ -177,7 +177,7 @@
      "productora": "Marvel",
      "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
      "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
-     "genero": "SuperHeroes"
+     "genero": "Super Héroes"
    },
    {
      "ruta": "/SPIDER-MAN.mp4",
@@ -189,7 +189,7 @@
      "productora": "Marvel",
      "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
      "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
-     "genero": "SuperHeroes"
+     "genero": "Super Héroes"
    },
    {
      "ruta": "/SPIDER-MAN.mp4",
@@ -201,7 +201,7 @@
      "productora": "Marvel",
      "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
      "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
-     "genero": "SuperHeroes"
+     "genero": "Super Héroes"
    },
    {
      "ruta": "/SPIDER-MAN.mp4",
@@ -213,7 +213,7 @@
      "productora": "Marvel",
      "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
      "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
-     "genero": "SuperHeroes"
+     "genero": "Super Héroes"
    },
    {
      "ruta": "/SPIDER-MAN.mp4",
@@ -225,7 +225,7 @@
      "productora": "Marvel",
      "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
      "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
-     "genero": "SuperHeroes"
+     "genero": "Super Héroes"
    },
    {
      "ruta": "/SPIDER-MAN.mp4",
@@ -237,7 +237,103 @@
      "productora": "Marvel",
      "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
      "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
-     "genero": "SuperHeroes"
+     "genero": "Super Héroes"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Annie.png",
+     "banner": "/xd.jpg",
+     "nombre": "Annie",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Musical"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Cats.png",
+     "banner": "/xd.jpg",
+     "nombre": "Cats",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Musical"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/El gran showman.png",
+     "banner": "/xd.jpg",
+     "nombre": "El gran Showman",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Musical"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Elvis.png",
+     "banner": "/xd.jpg",
+     "nombre": "Elvis",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Musical"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Grase.png",
+     "banner": "/xd.jpg",
+     "nombre": "Grase",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Musical"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/La la land.png",
+     "banner": "/xd.jpg",
+     "nombre": "La la land",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Musical"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Mamma mia.png",
+     "banner": "/xd.jpg",
+     "nombre": "Mamma mia",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Musical"
+   },
+   {
+     "ruta": "/SPIDER-MAN.mp4",
+     "imagen": "/Matilda.png",
+     "banner": "/xd.jpg",
+     "nombre": "Matilda",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "Musical"
    }
 ]
 
