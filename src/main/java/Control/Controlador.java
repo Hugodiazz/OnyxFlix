@@ -22,15 +22,18 @@ public class Controlador {
     private ReproductorMP4 reproductorMP4;
     private EscenaPrueba escenaPrueba;
     private Datos datos;
-    public Controlador(ReproductorMP4 reproductorMP4, Stage stage, Datos datos) {
+    public Controlador(ReproductorMP4 reproductorMP4, Stage stage, Datos datos) throws MalformedURLException, URISyntaxException {
         this.stage = stage;
         this.reproductorMP4= reproductorMP4;
         this.datos = datos;
 
+        //reproductorMP4.reproducirPelicula(datos.getPeliculas().getFirst());
         //escenaPrueba = new EscenaPrueba(stage);
+
         Escena1 escena1= new Escena1(stage, datos.getPeliculas());
         //Escena2 escena2= new Escena2(stage);
         //escena1.createScrollPane(datos.getPeliculas());
+
 
 
         /*
@@ -62,6 +65,8 @@ public class Controlador {
         });
 
          */
+
+
     }
 
     public void actualizarSlider(){

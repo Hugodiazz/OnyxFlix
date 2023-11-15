@@ -13,11 +13,13 @@ public class Pelicula{
     private List<String> actores = new ArrayList<>();
     private String descripcion;
     private String genero;
+    private String banner;
     public Pelicula(){}
 
-    public Pelicula(String ruta, String imagen, String nombre, String pais, String anio, String productora, List<String> actores, String descripcion, String genero) {
+    public Pelicula(String ruta, String imagen, String banner,String nombre, String pais, String anio, String productora, List<String> actores, String descripcion, String genero) {
         this.ruta = ruta;
         this.imagen = imagen;
+        this.banner = banner;
         this.nombre = nombre;
         this.pais = pais;
         this.anio = anio;
@@ -97,5 +99,13 @@ public class Pelicula{
 
     public void setRuta(String ruta) {
         this.ruta = ruta;
+    }
+
+    public String getBanner() {
+        return banner;
+    }
+
+    public void setBanner(String banner) {
+        this.banner = banner;
     }
 }
