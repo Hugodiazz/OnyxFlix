@@ -71,12 +71,13 @@ public class Escena2 {
         botonAtras.setStyle("-fx-background-color: transparent; -fx-border-color: transparent");
         contenedorBoton.getChildren().add(botonAtras);
         contenedorBannerPelicula = new HBox();
-        BackgroundSize backgroundSize = new BackgroundSize(900,
-                700,
+
+        BackgroundSize backgroundSize = new BackgroundSize(100,
+                100,
                 true,
                 true,
                 true,
-                false);
+                true);
 
         // Crear un fondo con la imagen
         BackgroundImage image = new BackgroundImage(new Image("xd.jpg"),
@@ -87,8 +88,8 @@ public class Escena2 {
 
         contenedorBannerPelicula.setBackground(new Background(image));
         contenedorBannerPelicula.setStyle("-fx-border-color: red");
-        contenedorBannerPelicula.setPrefWidth(100);
         contenedorBannerPelicula.getChildren().add(contenedorBoton);
+
 
 
         contenedorDivisior.getChildren().addAll(contenedorBoton,contenedorBannerPelicula);

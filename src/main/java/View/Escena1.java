@@ -36,6 +36,8 @@ public class Escena1 {
         contenedorPrincipal = getContenedorPrincipal();
 
         scrollPadre = new ScrollPane();
+        scrollPadre.setId("scrollPadre");
+        scrollPadre.setFitToWidth(true);
         contenedorPrincipal.getChildren().add(contenedorTitulo);
         scrollPadre.setContent(contenedorPrincipal);
         scrollPadre.setHbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
@@ -73,14 +75,13 @@ public class Escena1 {
     }
 
     public VBox createScrollPane(List<Pelicula> peliculas) {
-        VBox container = new VBox(10);
+        VBox container = new VBox();
         container.setPrefWidth(950);
-        container.setPadding(new Insets(0, 40, 0, 40));
+        container.setPadding(new Insets(10, 40, 0, 40));
 
         ScrollPane scrollPane = new ScrollPane();
         scrollPane.setFitToWidth(true); // Establecer en false para que no se expanda más allá del ancho del padre
         scrollPane.setId("scrollPane");
-        scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
 
         HBox labelsContainer = new HBox(12);
         labelsContainer.setId("ColorFondoNegro");
@@ -136,7 +137,7 @@ public class Escena1 {
         titulo = new Label("OnyxFlix");
         titulo.setId("EstiloTituloEscena1");
         contenedorTitulo.getChildren().add(titulo);
-        contenedorTitulo.setPadding(new Insets(15));
+        contenedorTitulo.setPadding(new Insets(15,0,0,15));
         return contenedorPrincipal;
     }
 

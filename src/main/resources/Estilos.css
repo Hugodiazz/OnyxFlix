@@ -30,15 +30,55 @@
     -fx-font-weight: 400; /* Peso de la fuente */
 }
 
-#background-hbox {
-    -fx-background-image: url('ruta/a/tu/imagen/fondo.jpg');
-    -fx-background-repeat: no-repeat;
-    -fx-background-size: cover; /* o contain, según tus preferencias */
+#scrollPadre {
+    -fx-background-color: transparent;
 }
 
+#scrollPadre .scroll-bar:vertical{
+    -fx-background-color: #000;
+}
+
+#scrollPadre .scroll-bar:horizontal{
+    -fx-background-color: #000;
+}
+#scrollPadre .scroll-bar:vertical .thumb{
+    -fx-background-color: rgba(208, 204, 204, 0.85);
+}
+
+#scrollPadre .scroll-bar:horizontal .thumb{
+    -fx-background-color: transparent;
+}
+
+#scrollPadre .scroll-bar:horizontal .increment-button{
+    -fx-background-color: transparent;
+}
+
+#scrollPadre .scroll-bar:horizontal .decrement-button{
+    -fx-background-color: transparent
+}
+
+#scrollPadre .scroll-bar:vertical .increment-button{
+    -fx-background-color: transparent;
+}
+
+#scrollPadre .scroll-bar:horizontal .decrement-button{
+    -fx-background-color: #000;
+}
+
+#scrollPadre .scroll-bar:horizontal .increment-arrow{
+    -fx-background-color: #000;
+}
+
+#scrollPadre .scroll-bar:vertical .decrement-arrow{
+    -fx-background-color: transparent;
+}
+
+#scrollPadre .corner {
+    -fx-background-color: #000;
+}
 
 #scrollPane {
-    -fx-background-color: transparent;
+    -fx-background-color: #000;
 }
 
 #scrollPane .scroll-bar:vertical{
@@ -72,11 +112,11 @@
     -fx-background-color: transparent;
 }
 
-#scrollPane .scroll-bar:vertical .increment-arrow{
+#scrollPane .scroll-bar:horizontal .increment-arrow{
     -fx-background-color: transparent;
 }
 
-#scrollPane .scroll-bar:vertical .decrement-arrow{
+#scrollPane .scroll-bar:horizontal .decrement-arrow{
     -fx-background-color: transparent;
 }
 
