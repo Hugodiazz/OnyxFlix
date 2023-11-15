@@ -13,6 +13,7 @@ public class Pelicula{
     private List<String> actores = new ArrayList<>();
     private String descripcion;
     private String genero;
+    public Pelicula(){}
 
     public Pelicula(String ruta, String imagen, String nombre, String pais, String anio, String productora, List<String> actores, String descripcion, String genero) {
         this.ruta = ruta;

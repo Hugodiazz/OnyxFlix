@@ -11,6 +11,8 @@ module com.example.onyxtuve {
     exports Datos;
     exports View;
     exports ReproductorMP4;
+    exports Modelo to com.fasterxml.jackson.databind;
+    opens Modelo to com.fasterxml.jackson.databind;
     opens Principal to javafx.fxml;
     exports Principal;
 }

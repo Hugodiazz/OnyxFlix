@@ -31,6 +31,7 @@ public class Main extends Application {
         stage.setMinWidth(950);
         stage.setMinHeight(700);
         stage.setTitle("OnyxFlix");
+        datos = new Datos();
         reproductorMP4 = new ReproductorMP4();
         vista = new Vista(stage);
         controlador= new Controlador(reproductorMP4,stage,datos);

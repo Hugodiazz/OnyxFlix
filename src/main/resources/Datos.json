@@ -13,7 +13,7 @@
    {
      "ruta": "/SPIDERM-MAN.mp4",
      "imagen": "/xd.jpg",
-     "nombre": "Spider Man",
+     "nombre": "Spider Man 1",
      "pais": "Estados Unidos",
      "anio": "2023",
      "productora": "Marvel",
@@ -24,7 +24,7 @@
    {
    "ruta": "/SPIDERM-MAN.mp4",
    "imagen": "/xd.jpg",
-   "nombre": "Spider Man",
+   "nombre": "Spider Man 2",
    "pais": "Estados Unidos",
    "anio": "2023",
    "productora": "Marvel",
@@ -35,7 +35,7 @@
    {
      "ruta": "/SPIDERM-MAN.mp4",
      "imagen": "/xd.jpg",
-     "nombre": "Spider Man",
+     "nombre": "Spider Man 3",
      "pais": "Estados Unidos",
      "anio": "2023",
      "productora": "Marvel",
@@ -46,7 +46,29 @@
    {
      "ruta": "/SPIDERM-MAN.mp4",
      "imagen": "/xd.jpg",
-     "nombre": "Spider Man",
+     "nombre": "Spider Man 4",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "SuperHeroes"
+   },
+   {
+     "ruta": "/SPIDERM-MAN.mp4",
+     "imagen": "/xd.jpg",
+     "nombre": "Spider Man 5",
+     "pais": "Estados Unidos",
+     "anio": "2023",
+     "productora": "Marvel",
+     "actores": ["Wey 1", "wey 2", "wey3", "wey4"],
+     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "genero": "SuperHeroes"
+   },
+   {
+     "ruta": "/SPIDERM-MAN.mp4",
+     "imagen": "/xd.jpg",
+     "nombre": "Spider Man 6",
      "pais": "Estados Unidos",
      "anio": "2023",
      "productora": "Marvel",

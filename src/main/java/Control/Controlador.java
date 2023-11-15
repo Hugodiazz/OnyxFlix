@@ -21,11 +21,12 @@ public class Controlador {
     private ReproductorMP4 reproductorMP4;
     private EscenaPrueba escenaPrueba;
     private Datos datos;
-    public Controlador(ReproductorMP4 reproductorMP4, Stage stage, Datos datos) throws MalformedURLException, URISyntaxException {
+    public Controlador(ReproductorMP4 reproductorMP4, Stage stage, Datos datos) {
         this.stage = stage;
         this.reproductorMP4= reproductorMP4;
         this.datos = datos;
 
+        pruebaDatos();
 
         //escenaPrueba = new EscenaPrueba(stage);
         Escena1 escena1= new Escena1(stage);
@@ -72,5 +73,11 @@ public class Controlador {
                 }
             }
         });
+    }
+
+    public void pruebaDatos(){
+        for(Pelicula pelicula: datos.getPeliculas()){
+            System.out.println(pelicula.getNombre());
+        }
     }
 }
