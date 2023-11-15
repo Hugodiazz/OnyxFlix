@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Pelicula{
     private String ruta;
-    private String miniatura;
+    private String imagen;
     private String nombre;
     private String pais;
     private String anio;
@@ -14,9 +14,9 @@ public class Pelicula{
     private String descripcion;
     private String genero;
 
-    public Pelicula(String ruta, String miniatura, String nombre, String pais, String anio, String productora, List<String> actores, String descripcion, String genero) {
+    public Pelicula(String ruta, String imagen, String nombre, String pais, String anio, String productora, List<String> actores, String descripcion, String genero) {
         this.ruta = ruta;
-        this.miniatura = miniatura;
+        this.imagen = imagen;
         this.nombre = nombre;
         this.pais = pais;
         this.anio = anio;
@@ -82,16 +82,16 @@ public class Pelicula{
         this.genero = genero;
     }
 
-    public String getMiniatura() {
-        return miniatura;
+    public String getImagen() {
+        return imagen;
     }
 
     public String getRuta() {
         return ruta;
     }
 
-    public void setMiniatura(String miniatura) {
-        this.miniatura = miniatura;
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
 
     public void setRuta(String ruta) {
