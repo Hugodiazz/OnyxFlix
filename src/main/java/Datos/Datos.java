@@ -14,6 +14,7 @@ import java.util.List;
 
 public class Datos {
     List<Pelicula> peliculas = new ArrayList<>();
+    List<String> generos = new ArrayList<>();
 
     public Datos(){
         ArrayList<File> json = new ArrayList<>();
@@ -28,9 +29,23 @@ public class Datos {
         }catch(Exception e) {
             System.out.println("Error al leer el archivo Json "+ e);
         }
+
+        instanciarDatos();
+    }
+
+    public void instanciarDatos(){
+        for (Pelicula pelicula: peliculas){
+            if (!generos.contains(pelicula.getGenero())){
+                generos.add(pelicula.getGenero());
+            }
+        }
     }
 
     public List<Pelicula> getPeliculas() {
         return peliculas;
+    }
+
+    public List<String> getGeneros(){
+        return generos;
     }
 }

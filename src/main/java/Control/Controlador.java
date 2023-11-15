@@ -26,8 +26,6 @@ public class Controlador {
         this.reproductorMP4= reproductorMP4;
         this.datos = datos;
 
-        pruebaDatos();
-
         //escenaPrueba = new EscenaPrueba(stage);
         Escena1 escena1= new Escena1(stage);
 
@@ -73,11 +71,5 @@ public class Controlador {
                 }
             }
         });
-    }
-
-    public void pruebaDatos(){
-        for(Pelicula pelicula: datos.getPeliculas()){
-            System.out.println(pelicula.getNombre());
-        }
     }
 }
