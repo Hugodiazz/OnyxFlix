@@ -85,7 +85,10 @@ public class Escena1 {
         labelsContainer.setId("ColorFondoNegro");
         labelsContainer.setAlignment(Pos.TOP_LEFT); // Alinea el contenido al principio
 
-        Label tituloV = new Label("peliculas");
+        //obtengo el genero que recibi xd y pues lo obtengo de uno de los objetos que recibí vea, de onde mas pues.
+        String genero = peliculas.getFirst().getGenero();
+
+        Label tituloV = new Label(genero);
         tituloV.setId("EstiloGeneroEscena1");
 
         for (Pelicula pelicula : peliculas) {
@@ -127,7 +130,7 @@ public class Escena1 {
         contenedorPrincipal = new VBox();
         contenedorPrincipal.setId("ColorFondoNegro");
         contenedorTitulo = new HBox();
-        titulo = new Label("OnyxTube");
+        titulo = new Label("OnyxFlix");
         titulo.setId("EstiloTituloEscena1");
         contenedorTitulo.getChildren().add(titulo);
         contenedorTitulo.setPadding(new Insets(15));
