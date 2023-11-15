@@ -40,8 +40,27 @@ public class Escena1 {
         scrollPadre.setHbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
 
 
-        for(int i = 0; i<5; i++){
-            contenedorPrincipal.getChildren().add(createScrollPane(peliculas));
+        List<String> generos = new ArrayList<>();
+        //Obtengo los generos de todas las peliculas
+        for(Pelicula pelicula: peliculas){
+            if(!generos.contains(pelicula.getGenero())){
+                generos.add(pelicula.getGenero());
+            }
+        }
+
+        //Creo un ciclo para enviar las canciones de acuerdo a su genero
+        for (String genero : generos) {
+            // Lista de películas que coinciden con el género
+            List<Pelicula> peliculasEncontradas = new ArrayList<>();
+
+            // Recorre la lista de películas
+            for (Pelicula pelicula : peliculas) {
+                // Comprueba si el género de la película coincide con la palabra actual
+                if (pelicula.getGenero().equals(genero)) {
+                    peliculasEncontradas.add(pelicula);
+                }
+            }
+            contenedorPrincipal.getChildren().add(createScrollPane(peliculasEncontradas));
         }
 
 
