@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Escena1 {
+    private ScrollPane scrollPadre;
     private String[] lista = {"Video 1", "Video 2","Video 3","Video 4","Video 5"};
     private VBox scrollPane;
     private Label titulo;
@@ -33,7 +34,7 @@ public class Escena1 {
         this.stage = stage;
         contenedorPrincipal = getContenedorPrincipal();
 
-        ScrollPane scrollPadre = new ScrollPane();
+        scrollPadre = new ScrollPane();
         contenedorPrincipal.getChildren().add(contenedorTitulo);
         scrollPadre.setContent(contenedorPrincipal);
         scrollPadre.setHbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
@@ -57,8 +58,7 @@ public class Escena1 {
         container.setPadding(new Insets(0, 40, 0, 40));
 
         ScrollPane scrollPane = new ScrollPane();
-        scrollPane.setFitToWidth(false); // Establecer en false para que no se expanda más allá del ancho del padre
-        scrollPane.setMaxWidth(950); // Establecer el ancho máximo del ScrollPane
+        scrollPane.setFitToWidth(true); // Establecer en false para que no se expanda más allá del ancho del padre
         scrollPane.setId("scrollPane");
         scrollPane.setHbarPolicy(ScrollPane.ScrollBarPolicy.AS_NEEDED);
 
@@ -91,6 +91,11 @@ public class Escena1 {
 
         labelsContainer.addEventHandler(MouseEvent.MOUSE_EXITED, event -> {
             labelsContainer.setStyle("-fx-cursor: default;");
+        });
+
+        // Establece un ChangeListener para ajustar el maxWidth del VBox al ancho del ScrollPane
+        scrollPadre.widthProperty().addListener((observable, oldValue, newValue) -> {
+            container.setPrefWidth(newValue.doubleValue());
         });
 
         scrollPane.setContent(labelsContainer);
