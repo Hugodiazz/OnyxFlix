@@ -30,8 +30,8 @@ public class Controlador {
         //reproductorMP4.reproducirPelicula(datos.getPeliculas().getFirst());
         //escenaPrueba = new EscenaPrueba(stage);
 
-        Escena1 escena1= new Escena1(stage, datos.getPeliculas());
-        //Escena2 escena2= new Escena2(stage);
+        //Escena1 escena1= new Escena1(stage, datos.getPeliculas());
+        Escena2 escena2= new Escena2(stage);
         //escena1.createScrollPane(datos.getPeliculas());
 
 

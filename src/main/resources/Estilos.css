@@ -123,3 +123,30 @@
 #scrollPane .corner {
     -fx-background-color: transparent;
 }
+
+#EstiloDatosPeliculaEscena2{
+    -fx-text-fill: #FFF;
+    -fx-font-family: "Alata";
+    -fx-font-size: 30px;
+    -fx-font-style: normal;
+}
+
+#EstiloTextoTituloPeliculaEscena2{
+    -fx-text-fill: #FFF;
+    -fx-font-family: "Alata";
+    -fx-font-size: 15px;
+    -fx-font-style: normal;
+    -fx-font-weight: 400;
+}
+
+#FondoBlanco{
+    -fx-background-color: rgba(217, 217, 217, 0.55);
+}
+
+#EstiloInformacionEscena2{
+    -fx-text-fill: #FFF;
+    -fx-font-family: "Alata";
+    -fx-font-size: 20px;
+    -fx-font-style: normal;
+    -fx-font-weight: 400;
+}
