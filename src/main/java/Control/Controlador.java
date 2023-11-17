@@ -42,8 +42,8 @@ public class Controlador {
 
         if (escena1.getScrollPadre() != null){
             escena1.getScrollPadre().setOnMouseClicked(e->{
-                cambiarEscena(escena2.getScene());
                 escena2.iniciarDatos(escena1.getPeliculaSeleccionada());
+                cambiarEscena(escena2.getScene());
             });
         }
 

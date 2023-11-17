@@ -97,7 +97,7 @@ public class Escena2 {
 
     public VBox getContenedorPrincipal() {
         contenedorPrincipal.setId("ColorFondoNegro");
-        titulo = new Label("OnyxTube");
+        titulo = new Label("OnyxFlix");
         titulo.setId("EstiloTituloEscena1");
         contenedorTitulo = new HBox(10);
         contenedorTitulo.setPadding(new Insets(10));
