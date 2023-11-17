@@ -127,14 +127,14 @@
 #EstiloDatosPeliculaEscena2{
     -fx-text-fill: #FFF;
     -fx-font-family: "Alata";
-    -fx-font-size: 30px;
+    -fx-font-size: 50px;
     -fx-font-style: normal;
 }
 
 #EstiloTextoTituloPeliculaEscena2{
     -fx-text-fill: #FFF;
     -fx-font-family: "Alata";
-    -fx-font-size: 15px;
+    -fx-font-size: 20px;
     -fx-font-style: normal;
     -fx-font-weight: 400;
 }
