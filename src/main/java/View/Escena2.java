@@ -54,14 +54,14 @@ public class Escena2 {
         getPaisPelicula.setText(pelicula.getPais());
         getProductoraPelicula.setText(pelicula.getProductora());
         getAnoPelicula.setText(pelicula.getAnio());
-        getDescripcion.setText(pelicula.getDescripcion());
+        getDescripcion.setText("Descripción: " + pelicula.getDescripcion());
         String actores= "";
         for (int i = 0; i<pelicula.getActores().size(); i++){
             actores = actores + pelicula.getActores().get(i) + ", ";
         }
         actores = actores.substring(0, actores.length() - 2);
-        getElenco.setText(actores);
-        getGenero.setText(pelicula.getGenero());
+        getElenco.setText("Elenco: " + actores);
+        getGenero.setText("Género: " + pelicula.getGenero());
         imageviewBannerPelicula.setImage(new Image(pelicula.getBanner()));
     }
 
@@ -80,10 +80,8 @@ public class Escena2 {
         VboxScroll.setFitToWidth(true);
         //VboxScroll.setFitToHeight(true);
         contenedorInformacion = new VBox(10);
-        contenedorInformacion.setPadding(new Insets(0,0,0,57));
+        contenedorInformacion.setPadding(new Insets(0,40,0,57));
         contenedorInformacion = getContenedorInformacion();
-
-
 
         contenedorPrincipal.getChildren().addAll(contenedorTitulo,contenedorSubtitulo,contenedorDivisior,contenedorInformacion);
         VboxScroll.setContent(contenedorPrincipal);
@@ -220,32 +218,19 @@ public class Escena2 {
     }
 
     public VBox getContenedorInformacion() {
-        HBox contElenco = new HBox();
-        Label elenco = new Label("Elenco: ");
-        elenco.setId("EstiloInformacionEscena2");
         getElenco = new Label();
         getElenco.setId("EstiloInformacionEscena2");
         getElenco.setWrapText(true);
-        contElenco.getChildren().addAll(elenco,getElenco);
 
-        HBox contgenero = new HBox();
-        Label genero = new Label("Género: ");
-        genero.setId("EstiloInformacionEscena2");
         getGenero = new Label();
         getGenero.setId("EstiloInformacionEscena2");
         getGenero.setWrapText(true);
-        contgenero.getChildren().addAll(genero,getGenero);
 
-        HBox contDescripcion = new HBox();
-        Label descripcion = new Label("Descripción: ");
-        descripcion.setId("EstiloInformacionEscena2");
         getDescripcion = new Label();
         getDescripcion.setId("EstiloInformacionEscena2");
         getDescripcion.setWrapText(true);
-        contDescripcion.getChildren().addAll(descripcion,getDescripcion);
 
-
-        contenedorInformacion.getChildren().addAll(contElenco,contgenero,contDescripcion);
+        contenedorInformacion.getChildren().addAll(getElenco,getGenero,getDescripcion);
         return contenedorInformacion;
     }
 
