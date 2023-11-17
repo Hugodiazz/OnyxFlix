@@ -49,7 +49,7 @@ public class Escena2 {
         contenedorDivisior.setPadding(new Insets(0,40,0,0));
         ScrollPane VboxScroll = new ScrollPane();
         VboxScroll.setFitToWidth(true);
-        VboxScroll.setFitToHeight(true);
+        //VboxScroll.setFitToHeight(true);
         contenedorInformacion = new VBox(10);
         contenedorInformacion.setPadding(new Insets(0,0,0,57));
         contenedorInformacion = getContenedorInformacion();
@@ -211,7 +211,7 @@ public class Escena2 {
         HBox contDescripcion = new HBox();
         Label descripcion = new Label("Descripción: ");
         descripcion.setId("EstiloInformacionEscena2");
-        Label getDescripcion = new Label("Descripción de la pelicula");
+        Label getDescripcion = new Label("\nDescripción de la pelicula\nasasasa");
         getDescripcion.setId("EstiloInformacionEscena2");
         getDescripcion.setWrapText(true);
         contDescripcion.getChildren().addAll(descripcion,getDescripcion);
