@@ -208,7 +208,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Ant-man.png",
-     "banner": "/xd.jpg",
+     "banner": "/ant-man_banner.png",
      "nombre": "Ant-Man and the Wasp: Quantumania",
      "pais": "Estados Unidos",
      "anio": "2023",
@@ -232,7 +232,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Black widow.png",
-     "banner": "/xd.jpg",
+     "banner": "/Black widow_banner.png",
      "nombre": "Black Widow",
      "pais": "Estados Unidos",
      "anio": "2021",
@@ -253,7 +253,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Doctor Strange.png",
-     "banner": "/xd.jpg",
+     "banner": "/Doctor Strange_banner.png",
      "nombre": "Doctor Strange in the Multiverse of Madness",
      "pais": "Estados Unidos",
      "anio": "2022",
@@ -277,7 +277,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Eternals.png",
-     "banner": "/xd.jpg",
+     "banner": "/Eternals_banner.png",
      "nombre": "Eternals",
      "pais": "Estados Unidos",
      "anio": "2021",
@@ -301,7 +301,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Guardianes de la galaxia.png",
-     "banner": "/xd.jpg",
+     "banner": "/Guardianes de la galaxia_banner.png",
      "nombre": "Guardianes de la Galaxia Vol.3",
      "pais": "Estados Unidos",
      "anio": "2023",
@@ -326,7 +326,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Infinity war.png",
-     "banner": "/xd.jpg",
+     "banner": "/infinity war_banner.png",
      "nombre": "Avengers: Infinity War",
      "pais": "Estados Unidos",
      "anio": "2018",
@@ -360,7 +360,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/shang chi.png",
-     "banner": "/xd.jpg",
+     "banner": "/shang chi_banner.png",
      "nombre": "Shang-Chi y la leyenda de los diez anillos",
      "pais": "Estados Unidos",
      "anio": "2021",
@@ -383,7 +383,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/The marvels.png",
-     "banner": "/xd.jpg",
+     "banner": "/The marvels_banner.png",
      "nombre": "The Marvels",
      "pais": "Estados Unidos",
      "anio": "2023",
@@ -402,7 +402,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Thor.png",
-     "banner": "/xd.jpg",
+     "banner": "/Thor_banner.png",
      "nombre": "Thor: Love and Thunder",
      "pais": "Estados Unidos",
      "anio": "2022",
@@ -422,7 +422,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Wakanda forever.png",
-     "banner": "/xd.jpg",
+     "banner": "/Wakanda forever_banner.png",
      "nombre": "Black Panther: Wakanda Forever",
      "pais": "Estados Unidos",
      "anio": "2022",
@@ -441,7 +441,7 @@
        "Julia Louis-Dreyfus",
        "Angela Bassett"
      ],
-     "descripcion": "Una sorprendente aventura con tu buen amigo spiterman",
+     "descripcion": "La reina Ramonda (Angela Bassett), Shuri (Letitia Wright), M’Baku (Winston Duke), Okoye (Danai Gurira) y las Dora Milaje (incluida Florence Kasumba), luchan para proteger su nación de la injerencia de potencias mundiales a raíz de la muerte del rey T’Challa. Mientras los wakandianos se esfuerzan por adaptarse a su nueva etapa, los héroes deben actuar unidos, con la ayuda del Perro de la Guerra Nakia (Lupita Nyong’o) y Everett Ross (Martin Freeman), y forzar un nuevo destino para el reino de Wakanda.",
      "genero": "Super Héroes"
    },
    {
