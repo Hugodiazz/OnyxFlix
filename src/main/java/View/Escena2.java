@@ -85,6 +85,7 @@ public class Escena2 {
 
         contenedorPrincipal.getChildren().addAll(contenedorTitulo,contenedorSubtitulo,contenedorDivisior,contenedorInformacion);
         VboxScroll.setContent(contenedorPrincipal);
+        VboxScroll.setId("scrollPadre");
 
         scene = new Scene(VboxScroll);
         stage.setScene(scene);
