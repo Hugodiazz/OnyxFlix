@@ -34,8 +34,7 @@ public class Main extends Application {
         datos = new Datos();
         reproductorMP4 = new ReproductorMP4();
         vista = new Vista(stage);
-        controlador= new Controlador(reproductorMP4,stage,datos);
-        stage.show();
+        controlador= new Controlador(vista, reproductorMP4,stage,datos);
     }
 
     public static void main(String[] args) {

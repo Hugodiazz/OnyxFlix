@@ -1,5 +1,6 @@
 package View;
 
+import Modelo.Pelicula;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -36,6 +37,34 @@ public class Escena2 {
     private Image imageBtnPlay;
     private ImageView btnPlayImageView;
     private VBox infoPelicula;
+    private Scene scene;
+    private Pelicula pelicula;
+    private Label tituloPelicula;
+    private Label getPaisPelicula;
+    private Label getProductoraPelicula;
+    private Label getAnoPelicula;
+    private Label getDescripcion;
+    private Label getElenco;
+    private Label getGenero;
+
+
+    public void iniciarDatos(Pelicula pelicula){
+        this.pelicula = pelicula;
+        tituloPelicula.setText(pelicula.getNombre());
+        getPaisPelicula.setText(pelicula.getPais());
+        getProductoraPelicula.setText(pelicula.getProductora());
+        getAnoPelicula.setText(pelicula.getAnio());
+        getDescripcion.setText(pelicula.getDescripcion());
+        String actores= "";
+        for (int i = 0; i<pelicula.getActores().size(); i++){
+            actores = actores + pelicula.getActores().get(i) + ", ";
+        }
+        actores = actores.substring(0, actores.length() - 2);
+        getElenco.setText(actores);
+        getGenero.setText(pelicula.getGenero());
+        imageviewBannerPelicula.setImage(new Image(pelicula.getBanner()));
+    }
+
 
     public Escena2(Stage stage){
         this.stage=stage;
@@ -59,7 +88,7 @@ public class Escena2 {
         contenedorPrincipal.getChildren().addAll(contenedorTitulo,contenedorSubtitulo,contenedorDivisior,contenedorInformacion);
         VboxScroll.setContent(contenedorPrincipal);
 
-        Scene scene = new Scene(VboxScroll);
+        scene = new Scene(VboxScroll);
         stage.setScene(scene);
 
         String cssPath = "/Estilos.css"; // Reemplaza con la ruta correcta
@@ -102,7 +131,6 @@ public class Escena2 {
         contenedorBannerPelicula.prefWidth(200);
 
         paneImagen = new Pane();  // Nuevo Pane para contener la imagen
-        imageBannerPelicula = new Image("El gato con botasBanner.png");
         imageviewBannerPelicula = new ImageView(imageBannerPelicula);
         //imageviewBannerPelicula.setPreserveRatio(true);
         imageviewBannerPelicula.setFitWidth(872);
@@ -134,7 +162,7 @@ public class Escena2 {
         contenedorBtnPlay.getChildren().add(btnPlay);
         contenedorBtnPlay.setAlignment(Pos.BOTTOM_CENTER);
 
-        Label tituloPelicula = new Label("Nombre de la pelicula");
+        tituloPelicula = new Label();
         tituloPelicula.setId("EstiloDatosPeliculaEscena2");
         tituloPelicula.setWrapText(true);
         HBox contenedorTituloPelicula = new HBox();
@@ -142,13 +170,13 @@ public class Escena2 {
         contenedorTituloPelicula.getChildren().add(tituloPelicula);
 
         HBox infoDirectorPais = new HBox(10);
-        Label directorPelicula = new Label("Director: ");
+        Label directorPelicula = new Label("");
         Label getDirectorPelicula = new Label("Nombre del director");
         getDirectorPelicula.setWrapText(true);
         getDirectorPelicula.setId("EstiloTextoTituloPeliculaEscena2");
         directorPelicula.setId("EstiloTextoTituloPeliculaEscena2");
-        Label paisPelicula = new Label("Pais: ");
-        Label getPaisPelicula = new Label("Nombre del pais");
+        Label paisPelicula = new Label("País: ");
+        getPaisPelicula = new Label();
         getPaisPelicula.setWrapText(true);
         getPaisPelicula.setId("EstiloTextoTituloPeliculaEscena2");
         paisPelicula.setId("EstiloTextoTituloPeliculaEscena2");
@@ -161,12 +189,12 @@ public class Escena2 {
 
         HBox infoProductoraAno = new HBox(10);
         Label productoraPelicula = new Label("Productora: ");
-        Label getProductoraPelicula = new Label("Nombre de la productora");
+        getProductoraPelicula = new Label();
         getProductoraPelicula.setWrapText(true);
         getProductoraPelicula.setId("EstiloTextoTituloPeliculaEscena2");
         productoraPelicula.setId("EstiloTextoTituloPeliculaEscena2");
         Label anoPelicula = new Label("Año: ");
-        Label getAnoPelicula = new Label("Año de la pelicula");
+        getAnoPelicula = new Label();
         getAnoPelicula.setWrapText(true);
         getAnoPelicula.setId("EstiloTextoTituloPeliculaEscena2");
         anoPelicula.setId("EstiloTextoTituloPeliculaEscena2");
@@ -195,7 +223,7 @@ public class Escena2 {
         HBox contElenco = new HBox();
         Label elenco = new Label("Elenco: ");
         elenco.setId("EstiloInformacionEscena2");
-        Label getElenco = new Label("Nombre del elenco");
+        getElenco = new Label();
         getElenco.setId("EstiloInformacionEscena2");
         getElenco.setWrapText(true);
         contElenco.getChildren().addAll(elenco,getElenco);
@@ -203,7 +231,7 @@ public class Escena2 {
         HBox contgenero = new HBox();
         Label genero = new Label("Género: ");
         genero.setId("EstiloInformacionEscena2");
-        Label getGenero = new Label("Nombre del genero");
+        getGenero = new Label();
         getGenero.setId("EstiloInformacionEscena2");
         getGenero.setWrapText(true);
         contgenero.getChildren().addAll(genero,getGenero);
@@ -211,7 +239,7 @@ public class Escena2 {
         HBox contDescripcion = new HBox();
         Label descripcion = new Label("Descripción: ");
         descripcion.setId("EstiloInformacionEscena2");
-        Label getDescripcion = new Label("\nDescripción de la pelicula\nasasasa");
+        getDescripcion = new Label();
         getDescripcion.setId("EstiloInformacionEscena2");
         getDescripcion.setWrapText(true);
         contDescripcion.getChildren().addAll(descripcion,getDescripcion);
@@ -221,12 +249,15 @@ public class Escena2 {
         return contenedorInformacion;
     }
 
-
-
-
-
+    public Scene getScene() {
+        return scene;
+    }
 
     public Label getSubtitulo() {
         return subtitulo;
+    }
+
+    public Button getBotonAtras() {
+        return botonAtras;
     }
 }

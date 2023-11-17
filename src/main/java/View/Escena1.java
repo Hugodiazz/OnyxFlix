@@ -30,6 +30,7 @@ public class Escena1 {
     private double scrollSpeed = 1.5;
     private HBox labelsContainer;
     private Pelicula peliculaSeleccionada;
+    private Scene scene;
 
     public Escena1(Stage stage, List<Pelicula> peliculas){
         this.stage = stage;
@@ -67,7 +68,7 @@ public class Escena1 {
         }
 
 
-        Scene scene = new Scene(scrollPadre, 800, 600);
+        scene = new Scene(scrollPadre, 800, 600);
         stage.setScene(scene);
 
         String cssPath = "/Estilos.css"; // Reemplaza con la ruta correcta
@@ -84,7 +85,7 @@ public class Escena1 {
         scrollPane.setId("scrollPane");
         scrollPane.setPrefHeight(189);
 
-        HBox labelsContainer = new HBox(12);
+        labelsContainer = new HBox(12);
         labelsContainer.setId("ColorFondoNegro");
         labelsContainer.setAlignment(Pos.TOP_LEFT); // Alinea el contenido al principio
 
@@ -98,7 +99,7 @@ public class Escena1 {
             ImageView imageView = new ImageView(new Image(pelicula.getImagen(), 275, 174, false, true));
             labelsContainer.getChildren().add(imageView);
             labelsContainer.setStyle("-fx-border-color: black; ");
-            labelsContainer.setOnMouseClicked(e ->{
+            imageView.setOnMouseClicked(e->{
                 peliculaSeleccionada = pelicula;
             });
         }
@@ -142,5 +143,15 @@ public class Escena1 {
         return contenedorPrincipal;
     }
 
+    public Scene getScene(){
+        return scene;
+    }
 
+    public ScrollPane getScrollPadre() {
+        return scrollPadre;
+    }
+
+    public Pelicula getPeliculaSeleccionada() {
+        return peliculaSeleccionada;
+    }
 }

@@ -5,6 +5,7 @@ import Modelo.Pelicula;
 import ReproductorMP4.ReproductorMP4;
 import View.Escena1;
 import View.Escena2;
+import View.Vista;
 import javafx.beans.property.ReadOnlyProperty;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -22,7 +23,9 @@ public class Controlador {
     private ReproductorMP4 reproductorMP4;
     private EscenaPrueba escenaPrueba;
     private Datos datos;
-    public Controlador(ReproductorMP4 reproductorMP4, Stage stage, Datos datos) throws MalformedURLException, URISyntaxException {
+    private Vista vista;
+    public Controlador(Vista vista, ReproductorMP4 reproductorMP4, Stage stage, Datos datos) throws MalformedURLException, URISyntaxException {
+        this.vista = vista;
         this.stage = stage;
         this.reproductorMP4= reproductorMP4;
         this.datos = datos;
@@ -30,10 +33,23 @@ public class Controlador {
         //reproductorMP4.reproducirPelicula(datos.getPeliculas().getFirst());
         //escenaPrueba = new EscenaPrueba(stage);
 
-        //Escena1 escena1= new Escena1(stage, datos.getPeliculas());
+        Escena1 escena1= new Escena1(stage, datos.getPeliculas());
         Escena2 escena2= new Escena2(stage);
+
+        stage.setScene(escena1.getScene());
+        stage.show();
         //escena1.createScrollPane(datos.getPeliculas());
 
+        if (escena1.getScrollPadre() != null){
+            escena1.getScrollPadre().setOnMouseClicked(e->{
+                cambiarEscena(escena2.getScene());
+                escena2.iniciarDatos(escena1.getPeliculaSeleccionada());
+            });
+        }
+
+        escena2.getBotonAtras().setOnMouseClicked(e ->{
+            cambiarEscena(escena1.getScene());
+        });
 
 
         /*
@@ -67,6 +83,10 @@ public class Controlador {
          */
 
 
+    }
+
+    public void cambiarEscena(Scene scene){
+        vista.setScene(scene);
     }
 
     public void actualizarSlider(){

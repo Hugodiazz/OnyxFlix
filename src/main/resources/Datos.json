@@ -2,7 +2,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/El gato con botas.png",
-     "banner": "/xd.jpg",
+     "banner": "/El gato con botas_banner.png",
      "nombre": "El Gatos con Botas: el último deseo",
      "pais": "Estados Unidos",
      "anio": "2023",
@@ -21,7 +21,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Elementos.png",
-     "banner": "/xd.jpg",
+     "banner": "/Elementos_banner.png",
      "nombre": "Elementos",
      "pais": "Estados Unidos",
      "anio": "2022",
@@ -33,7 +33,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Encanto.png",
-     "banner": "/xd.jpg",
+     "banner": "/Encanto_banner.png",
      "nombre": "Encanto",
      "pais": "Estados Unidos",
      "anio": "2021",
@@ -53,7 +53,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Garfield.png",
-     "banner": "/xd.jpg",
+     "banner": "/Garfield_banner.png",
      "nombre": "The Garfield Movie",
      "pais": "Estados Unidos",
      "anio": "2024",
@@ -73,7 +73,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Intensamente 2.png",
-     "banner": "/xd.jpg",
+     "banner": "/Intensamente 2_banner.png",
      "nombre": "Intensamente 2",
      "pais": "Estados Unidos",
      "anio": "2024",
@@ -89,7 +89,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Mario Bros.png",
-     "banner": "/xd.jpg",
+     "banner": "/Mario Bros_banner.png",
      "nombre": "Super Mario Bros: La pelicula",
      "pais": "Estados Unidos",
      "anio": "2023",
@@ -113,7 +113,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Minions.png",
-     "banner": "/xd.jpg",
+     "banner": "/minions_banner.png",
      "nombre": "Minions: nace un villano",
      "pais": "Estados Unidos",
      "anio": "2022",
@@ -135,7 +135,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Pinguinos de madagascar.png",
-     "banner": "/xd.jpg",
+     "banner": "/Pinguinos de madagascar_banner.png",
      "nombre": "Pingüinos de Magascar",
      "pais": "Estados Unidos",
      "anio": "2014",
@@ -157,7 +157,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Pinocho.png",
-     "banner": "/xd.jpg",
+     "banner": "/Pinocho_banner.png",
      "nombre": "Pinocho de Guillermo del Toro",
      "pais": "Estados Unidos",
      "anio": "2022",
@@ -182,7 +182,7 @@
    {
      "ruta": "/SPIDER-MAN.mp4",
      "imagen": "/Toy Story 4.png",
-     "banner": "/xd.jpg",
+     "banner": "/Toy Story 4_banner.png",
      "nombre": "Toy Story 4",
      "pais": "Estados Unidos",
      "anio": "2019",
