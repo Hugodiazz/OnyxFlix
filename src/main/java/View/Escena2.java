@@ -247,4 +247,12 @@ public class Escena2 {
     public Button getBotonAtras() {
         return botonAtras;
     }
+
+    public Button getBtnPlay() {
+        return btnPlay;
+    }
+
+    public Pelicula getPelicula() {
+        return pelicula;
+    }
 }
