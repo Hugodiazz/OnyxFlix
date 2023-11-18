@@ -132,17 +132,17 @@ public class Escena2 {
 
         divisorStackPane = new HBox();
         datosPelicula = new HBox();
-        infoPelicula = new VBox(25);
+        infoPelicula = new VBox(20);
+        infoPelicula.setPrefWidth(400);
         //infoPelicula.setStyle("-fx-border-color: blue");
         infoPelicula.setPadding(new Insets(0,10,0,10));
         HBox.setHgrow(datosPelicula, Priority.ALWAYS);
-        datosPelicula.setPadding(new Insets(100,0,0,47));
+        datosPelicula.setPadding(new Insets(40,0,0,47));
         //datosPelicula.setStyle("-fx-border-color: green");
 
         btnPlay = new Button();
         //btnPlay.setPadding(new Insets(0,60,53,0));
         HBox contenedorBtnPlay = new HBox();
-        VBox.setVgrow(contenedorBtnPlay, Priority.ALWAYS);
         contenedorBtnPlay.setPadding(new Insets(0,0,0,-10));
         contenedorBtnPlay.setAlignment(Pos.CENTER_LEFT);
         //contenedorBtnPlay.setStyle("-fx-border-color: red");
