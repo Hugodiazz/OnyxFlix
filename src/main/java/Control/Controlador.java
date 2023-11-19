@@ -1,6 +1,7 @@
 package Control;
 
 import Datos.Datos;
+import Modelo.Pelicula;
 import ReproductorMP4.ReproductorMP4;
 import View.Escena1;
 import View.Escena2;
@@ -55,9 +56,14 @@ public class Controlador {
             } catch (URISyntaxException ex) {
                 throw new RuntimeException(ex);
             }
+        });
 
-
-            //actualizarSlider();
+        escena2.getBtnAnadirMas().setOnMouseClicked(e->{
+            reproductorMP4.setMiListaDeReproduccion(escena2.getPelicula());
+            System.out.println("Peliculas en Lista");
+            for (Pelicula pelicula: reproductorMP4.getMiListaDeReproduccion()){
+                System.out.println(pelicula.getNombre());
+            }
         });
         escena3.getMediaView().setOnMouseClicked(e ->{
             reproductorMP4.playPause();

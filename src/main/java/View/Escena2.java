@@ -255,4 +255,8 @@ public class Escena2 {
     public Pelicula getPelicula() {
         return pelicula;
     }
+
+    public Button getBtnAnadirMas() {
+        return btnAnadirMas;
+    }
 }

@@ -8,6 +8,7 @@ import javafx.scene.media.MediaPlayer;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -18,6 +19,7 @@ public class ReproductorMP4{
     private Pelicula peliculaActual;
     private List<Pelicula> peliculaList;
     private int indiceEnLista;
+    private List<Pelicula> miListaDeReproduccion = new ArrayList<>();
 
     public ReproductorMP4() {
         peliculaList = Collections.emptyList();
@@ -50,6 +52,18 @@ public class ReproductorMP4{
         this.volumen = volumen;
         if (peliculaReproduciendo != null) {
             peliculaReproduciendo.setVolume(volumen);
+        }
+    }
+
+    public List<Pelicula> getMiListaDeReproduccion() {
+        return miListaDeReproduccion;
+    }
+
+    public void setMiListaDeReproduccion(Pelicula nuevaPelicula){
+        if (!miListaDeReproduccion.contains(nuevaPelicula)) {
+            this.miListaDeReproduccion.add(nuevaPelicula);
+        }else{
+            System.out.println("Ya existe en la lista");
         }
     }
 }
