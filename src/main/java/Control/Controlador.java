@@ -64,6 +64,7 @@ public class Controlador {
             for (Pelicula pelicula: reproductorMP4.getMiListaDeReproduccion()){
                 System.out.println(pelicula.getNombre());
             }
+            escena1.createScrollPaneMiLista(reproductorMP4.getMiListaDeReproduccion());
         });
         escena3.getMediaView().setOnMouseClicked(e ->{
             reproductorMP4.playPause();
