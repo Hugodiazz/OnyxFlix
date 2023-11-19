@@ -640,7 +640,7 @@
      "genero": "Musical"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/A todos los chicos de los que me enamoré _ Tráiler  _ Netflix(720P_HD).mp4",
      "imagen": "/A todos los chicos de los que me enamoré.png",
      "banner": "/A todos los chicos de los que me enamoré_banner.png",
      "nombre": "A todos los chicos de los que me enamoré",
@@ -659,7 +659,7 @@
      "genero": "Romantica"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Amor de calendario_ con Emma Roberts _ Encuentra a tu pareja ideal _ Tráiler oficial _ Netflix(720P_HD).mp4",
      "imagen": "/Amor de calendario.png",
      "banner": "/Amor de calendario_banner.png",
      "nombre": "Amor de calendario",
@@ -680,7 +680,7 @@
      "genero": "Romantica"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/CÁSATE CONMIGO _ Tráiler Oficial (Universal Pictures) HD(720P_HD).mp4",
      "imagen": "/Casate conmigo.png",
      "banner": "/Casate conmigo_banner.png",
      "nombre": "Casate conmigo",
@@ -704,7 +704,7 @@
      "genero": "Romantica"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Eres tú _ Tráiler oficial _ Netflix España(720P_HD).mp4",
      "imagen": "/Eres tu.png",
      "banner": "/Eres tu_banner.png",
      "nombre": "Eres tu",
@@ -722,7 +722,7 @@
      "genero": "Romantica"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Hasta Que Nos Volvamos A Encontrar _ Tráiler Oficial _ Netflix(720P_HD).mp4",
      "imagen": "/Hasta Que Nos Volvamos A Encontrar.png",
      "banner": "/Hasta Que Nos Volvamos A Encontrar_banner.png",
      "nombre": "Hasta que nos volvamos a encontrar",
@@ -737,7 +737,7 @@
      "genero": "Romantica"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Loco por ella _ Tráiler Oficial _ Netflix(720P_HD).mp4",
      "imagen": "/Loco por ella.png",
      "banner": "/Loco por ella_banner.png",
      "nombre": "Loco por ella",
@@ -752,7 +752,7 @@
      "genero": "Romantica"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Persuasión_ con Dakota Johnson (EN ESPAÑOL) _ Tráiler oficial _ Netflix(720P_HD).mp4",
      "imagen": "/Persuasión.png",
      "banner": "/Persuasión_banner.png",
      "nombre": "Persuasión",
@@ -772,7 +772,7 @@
      "genero": "Romantica"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Rojo_ Blanco y Sangre Azul - Tráiler Oficial(720P_HD).mp4",
      "imagen": "/Rojo blanco y sangre azul.png",
      "banner": "/Rojo blanco y sangre azul_banner.png",
      "nombre": "Rojo, blanco y sangre azul",
@@ -792,7 +792,7 @@
      "genero": "Romantica"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/The Royal Treatment _ Official Trailer _ Netflix(720P_HD).mp44",
      "imagen": "/Tratamiento real.png",
      "banner": "/Tratamiento real_banner.png",
      "nombre": "Tratamiento real",
@@ -807,7 +807,7 @@
      "genero": "Romantica"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Yo Antes de ti - Tráiler Oficial en Español HD(720P_HD).mp4",
      "imagen": "/Yo antes de ti.png",
      "banner": "/Yo antes de ti_banner.png",
      "nombre": "Yo antes de ti",
