@@ -1,14 +1,17 @@
-package ReproductorMP4;
+package View;
 
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.*;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.net.MalformedURLException;
@@ -35,15 +38,35 @@ public class Escena3 {
         this.stage= stage;
         String titulo = new String();
         this.stage.setTitle(titulo);
-        btAtras = new Button("Regresar");
         btPlayPause = new Button("Play/Pause");
         slVolumen = new Slider(0, 100, 50);
         slTiempoDeReproduccion = new Slider();
         mediaView = new MediaView();
 
-        HBox controles = new HBox(btAtras, btPlayPause, slVolumen);
+        HBox contenedorArriba = new HBox();
+        btAtras = new Button();
+        ImageView ivAtras = new ImageView(new Image("btVolverAtrasE3.png"));
+        btAtras.setGraphic(ivAtras);
+        contenedorArriba.getChildren().add(btAtras);
+
+
+        HBox contenedorSlider = new HBox();
+        VBox.setVgrow(contenedorSlider, Priority.ALWAYS);
+        contenedorSlider.setPadding(new Insets(0,46,0,46));
+        HBox.setHgrow(slTiempoDeReproduccion, Priority.ALWAYS);
+        contenedorSlider.setStyle("-fx-border-color: blue");
+        contenedorSlider.setAlignment(Pos.BOTTOM_CENTER);
+        contenedorSlider.getChildren().add(slTiempoDeReproduccion);
+
+        HBox controles = new HBox(btPlayPause, slVolumen);
         controles.setAlignment(Pos.CENTER);
-        VBox contenedor = new VBox(mediaView, slTiempoDeReproduccion, controles);
+
+        VBox contenedorMultimedia = new VBox(10);
+        contenedorMultimedia.getChildren().addAll(contenedorArriba, contenedorSlider, controles);
+        contenedorMultimedia.setStyle("-fx-border-color: red");
+
+        StackPane contenedor = new StackPane(mediaView,contenedorMultimedia);
+        contenedor.setStyle("-fx-background-color: #000");
         contenedor.setAlignment(Pos.CENTER);
         scene = new Scene(contenedor, 800, 600);
         stage.setScene(scene);

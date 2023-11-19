@@ -7,7 +7,7 @@ import View.Escena2;
 import View.Vista;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import ReproductorMP4.Escena3;
+import View.Escena3;
 import javafx.util.Duration;
 
 import java.net.MalformedURLException;
