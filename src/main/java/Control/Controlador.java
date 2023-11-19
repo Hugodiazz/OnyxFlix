@@ -16,18 +16,20 @@ import java.net.URISyntaxException;
 public class Controlador {
     private Stage stage;
     private ReproductorMP4 reproductorMP4;
-    private Escena3 escena3;
     private Datos datos;
     private Vista vista;
+    private Escena3 escena3;
+    private Escena1 escena1;
+    private Escena2 escena2;
     public Controlador(Vista vista, ReproductorMP4 reproductorMP4, Stage stage, Datos datos) throws MalformedURLException, URISyntaxException {
         this.vista = vista;
         this.stage = stage;
         this.reproductorMP4= reproductorMP4;
         this.datos = datos;
 
-        Escena1 escena1= new Escena1(stage, datos.getPeliculas());
-        Escena2 escena2= new Escena2(stage);
-        Escena3 escena3 = new Escena3(stage);
+        escena1= new Escena1(stage, datos.getPeliculas());
+        escena2= new Escena2(stage);
+        escena3 = new Escena3(stage);
         
         stage.setScene(escena1.getScene());
         stage.show();
@@ -48,6 +50,7 @@ public class Controlador {
             try {
                 reproductorMP4.reproducirPelicula(escena2.getPelicula());
                 escena3.getMediaView().setMediaPlayer(reproductorMP4.getPeliculaReproduciendo());
+                actualizarSlider();
                 cambiarEscena(escena3.getScene());
             } catch (URISyntaxException ex) {
                 throw new RuntimeException(ex);
@@ -67,18 +70,14 @@ public class Controlador {
             reproductorMP4.setVolumen(newValue.doubleValue() / 100.0);
         });
         escena3.getSlTiempoDeReproduccion().setOnMousePressed(e ->{
-            if (reproductorMP4.getPeliculaReproduciendo() != null){
-                reproductorMP4.getPeliculaReproduciendo().pause();
-            }
+            reproductorMP4.getPeliculaReproduciendo().pause();
         });
         escena3.getSlTiempoDeReproduccion().setOnMouseReleased(e -> {
-            if(reproductorMP4.getPeliculaReproduciendo() != null){
-                double duration = reproductorMP4.getPeliculaReproduciendo().getTotalDuration().toSeconds();
-                double seekTime = escena3.getSlTiempoDeReproduccion().getValue() / 100 * duration;
-                reproductorMP4.getPeliculaReproduciendo().seek(Duration.seconds(seekTime));
-                reproductorMP4.getPeliculaReproduciendo().play();
-                actualizarSlider();
-            }
+            double duration = reproductorMP4.getPeliculaReproduciendo().getTotalDuration().toSeconds();
+            double seekTime = escena3.getSlTiempoDeReproduccion().getValue() / 100 * duration;
+            reproductorMP4.getPeliculaReproduciendo().seek(Duration.seconds(seekTime));
+            reproductorMP4.getPeliculaReproduciendo().play();
+            actualizarSlider();
         });
         escena3.getBtAtras().setOnMouseClicked(e->{
             reproductorMP4.getPeliculaReproduciendo().dispose();
@@ -93,14 +92,16 @@ public class Controlador {
     }
 
     public void actualizarSlider(){
-        reproductorMP4.getPeliculaReproduciendo().currentTimeProperty().addListener((observable, oldValue, newValue) -> {
-            if (!escena3.getSlTiempoDeReproduccion().isPressed()) {
-                double duration = reproductorMP4.getPeliculaReproduciendo().getTotalDuration().toSeconds();
-                double currentTime = newValue.toSeconds();
-                if (duration > 0) {
-                    escena3.getSlTiempoDeReproduccion().setValue(currentTime / duration * 100);
+        if (escena3 != null){
+            reproductorMP4.getPeliculaReproduciendo().currentTimeProperty().addListener((observable, oldValue, newValue) -> {
+                if (!escena3.getSlTiempoDeReproduccion().isPressed()) {
+                    double duration = reproductorMP4.getPeliculaReproduciendo().getTotalDuration().toSeconds();
+                    double currentTime = newValue.toSeconds();
+                    if (duration > 0) {
+                        escena3.getSlTiempoDeReproduccion().setValue(currentTime / duration * 100);
+                    }
                 }
-            }
-        });
+            });
+        }
     }
 }
