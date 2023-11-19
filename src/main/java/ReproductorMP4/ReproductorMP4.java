@@ -66,4 +66,8 @@ public class ReproductorMP4{
             System.out.println("Ya existe en la lista");
         }
     }
+
+    public void eliminarPelicula(Pelicula pelicula) {
+        miListaDeReproduccion.remove(pelicula);
+    }
 }
