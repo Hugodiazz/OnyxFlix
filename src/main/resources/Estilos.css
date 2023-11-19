@@ -158,3 +158,8 @@
     -fx-font-style: normal;
     -fx-font-weight: 400;
 }
+
+#botonTransparente{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent
+}

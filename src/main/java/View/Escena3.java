@@ -114,8 +114,8 @@ public class Escena3 {
         HBox.setHgrow(controlesBox, Priority.ALWAYS);
 
         btPlayPause = new Button();
-        btPlayPause.setGraphic(new ImageView(new Image("btPauseE3.png")));
-        btPlayPause.setStyle("-fx-background-color: transparent; -fx-border-color: transparent");
+        btPlayPause.setGraphic(new ImageView(new Image("btPauseE3.png",34,34,false,false)));
+        btPlayPause.setId("botonTransparente");
 
         btAdelantar = new Button();
         btAdelantar.setGraphic(new ImageView(new Image("btAdelantarE3.png")));

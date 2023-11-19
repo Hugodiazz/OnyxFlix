@@ -82,9 +82,9 @@ public class Controlador {
         escena3.getBtPlayPause().setOnMouseClicked(e ->{
             reproductorMP4.playPause();
             if (reproductorMP4.getPeliculaReproduciendo().getStatus() == javafx.scene.media.MediaPlayer.Status.PLAYING){
-                escena3.getBtPlayPause().setGraphic(new ImageView(new Image("btPlayE3.png")));
+                escena3.getBtPlayPause().setGraphic(new ImageView(new Image("btPlayE3.png",34,34,false,false)));
             }else {
-                escena3.getBtPlayPause().setGraphic(new ImageView(new Image("btPauseE3.png")));
+                escena3.getBtPlayPause().setGraphic(new ImageView(new Image("btPauseE3.png",34,34,false,false)));
             }
         });
         escena3.getSlVolumen().valueProperty().addListener((observable, oldValue, newValue) -> {
