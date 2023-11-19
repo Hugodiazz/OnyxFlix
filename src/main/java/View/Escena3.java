@@ -1,5 +1,8 @@
 package View;
 
+import javafx.animation.FadeTransition;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -8,15 +11,22 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.net.MalformedURLException;
 
 public class Escena3 {
+    private HBox controles;
+    private VBox contenedorMultimedia;
+    private HBox contenedorSlider;
+    private HBox contenedorArriba;
+    private Label tituloPelicula;
     private Stage stage;
     private Slider slVolumen;
     private Button btPlayPause;
@@ -43,35 +53,87 @@ public class Escena3 {
         slTiempoDeReproduccion = new Slider();
         mediaView = new MediaView();
 
-        HBox contenedorArriba = new HBox();
-        btAtras = new Button();
+        contenedorArriba = new HBox(30);
+        contenedorArriba.setAlignment(Pos.CENTER_LEFT);
+        contenedorArriba = getContenedorArriba();
+
+        contenedorSlider = new HBox();
+        contenedorSlider = getContenedorSlider();
+
+        controles = getControles();
+
+        contenedorMultimedia = new VBox();
+        contenedorMultimedia = getContenedorMultimedia();
+
+        StackPane contenedor = new StackPane(mediaView,contenedorMultimedia);
+        contenedor.setStyle("-fx-background-color: #000");
+        contenedor.setAlignment(Pos.CENTER);
+
+        // Agregar manejadores de eventos al StackPane
+        contenedor.setOnMouseEntered(this::mouseEntered);
+        contenedor.setOnMouseExited(this::mouseExited);
+
+        scene = new Scene(contenedor, 800, 600);
+        String cssPath = "/Estilos.css"; // Reemplaza con la ruta correcta
+        scene.getStylesheets().add(cssPath);
+        stage.setScene(scene);
+    }
+
+    public HBox getContenedorArriba() {
         ImageView ivAtras = new ImageView(new Image("btVolverAtrasE3.png"));
+        btAtras = new Button();
+        btAtras.setStyle("-fx-background-color: transparent; -fx-border-color: transparent");
         btAtras.setGraphic(ivAtras);
-        contenedorArriba.getChildren().add(btAtras);
+        tituloPelicula = new Label("Titulo de la pelicula");
+        tituloPelicula.setId("EstiloTituloPeliculaEscena3");
+        contenedorArriba.getChildren().addAll(btAtras,tituloPelicula);
+        return contenedorArriba;
+    }
 
-
-        HBox contenedorSlider = new HBox();
+    public HBox getContenedorSlider() {
         VBox.setVgrow(contenedorSlider, Priority.ALWAYS);
         contenedorSlider.setPadding(new Insets(0,46,0,46));
         HBox.setHgrow(slTiempoDeReproduccion, Priority.ALWAYS);
         contenedorSlider.setStyle("-fx-border-color: blue");
         contenedorSlider.setAlignment(Pos.BOTTOM_CENTER);
         contenedorSlider.getChildren().add(slTiempoDeReproduccion);
-
-        HBox controles = new HBox(btPlayPause, slVolumen);
-        controles.setAlignment(Pos.CENTER);
-
-        VBox contenedorMultimedia = new VBox(10);
-        contenedorMultimedia.getChildren().addAll(contenedorArriba, contenedorSlider, controles);
-        contenedorMultimedia.setStyle("-fx-border-color: red");
-
-        StackPane contenedor = new StackPane(mediaView,contenedorMultimedia);
-        contenedor.setStyle("-fx-background-color: #000");
-        contenedor.setAlignment(Pos.CENTER);
-        scene = new Scene(contenedor, 800, 600);
-        stage.setScene(scene);
+        return contenedorSlider;
     }
 
+    public HBox getControles(){
+        controles = new HBox(btPlayPause, slVolumen);
+        controles.setAlignment(Pos.CENTER);
+        return controles;
+    }
+
+    public VBox getContenedorMultimedia() {
+        contenedorMultimedia.getChildren().addAll(contenedorArriba, contenedorSlider, controles);
+        contenedorMultimedia.setStyle("-fx-border-color: red");
+        return contenedorMultimedia;
+    }
+
+    private void mouseEntered(MouseEvent event) {
+        // Detener cualquier animación en progreso
+        contenedorMultimedia.setVisible(true);
+        FadeTransition fadeTransition = new FadeTransition(Duration.seconds(0.2), contenedorMultimedia);
+        fadeTransition.setFromValue(0.0);
+        fadeTransition.setToValue(1.0);
+        fadeTransition.play();
+    }
+
+    private void mouseExited(MouseEvent event) {
+        // Crear y configurar la transición de desvanecimiento para ocultar contenedorMultimedia
+        FadeTransition fadeTransition = new FadeTransition(Duration.seconds(0.2), contenedorMultimedia);
+        fadeTransition.setFromValue(1.0);
+        fadeTransition.setToValue(0.0);
+        fadeTransition.setOnFinished(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                contenedorMultimedia.setVisible(false);
+            }
+        });
+        fadeTransition.play();
+    }
     public Button getBtPlayPause() {
         return btPlayPause;
     }

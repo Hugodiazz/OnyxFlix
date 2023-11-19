@@ -150,3 +150,11 @@
     -fx-font-style: normal;
     -fx-text-alignment: left;
 }
+
+#EstiloTituloPeliculaEscena3{
+    -fx-text-fill: #FFF;
+    -fx-font-family: 'Alata';
+    -fx-font-size: 50px;
+    -fx-font-style: normal;
+    -fx-font-weight: 400;
+}
