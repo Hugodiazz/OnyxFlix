@@ -25,7 +25,6 @@ public class Controlador {
         this.reproductorMP4= reproductorMP4;
         this.datos = datos;
 
-
         Escena1 escena1= new Escena1(stage, datos.getPeliculas());
         Escena2 escena2= new Escena2(stage);
         Escena3 escena3 = new Escena3(stage);
@@ -48,11 +47,12 @@ public class Controlador {
             System.out.println("Reproduciendo pelicula chi cheñor.");
             try {
                 reproductorMP4.reproducirPelicula(escena2.getPelicula());
+                escena3.getMediaView().setMediaPlayer(reproductorMP4.getPeliculaReproduciendo());
+                cambiarEscena(escena3.getScene());
             } catch (URISyntaxException ex) {
                 throw new RuntimeException(ex);
             }
-            escena3.getMediaView().setMediaPlayer(reproductorMP4.getPeliculaReproduciendo());
-            cambiarEscena(escena3.getScene());
+
 
             //actualizarSlider();
         });

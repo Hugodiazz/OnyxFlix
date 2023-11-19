@@ -206,7 +206,7 @@
      "genero": "Animación"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Ant-Man and The Wasp_ Quantumania _ Tráiler Oficial _ Doblado con subtítulos descriptivos(720P_HD).mp4",
      "imagen": "/Ant-man.png",
      "banner": "/ant-man_banner.png",
      "nombre": "Ant-Man and the Wasp: Quantumania",
@@ -230,7 +230,7 @@
      "genero": "Super Héroes"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Black Widow de Marvel Studios _ Tráiler Oficial #2 [Español Latino SUBTITULADO].mp4",
      "imagen": "/Black widow.png",
      "banner": "/Black widow_banner.png",
      "nombre": "Black Widow",
@@ -251,7 +251,7 @@
      "genero": "Super Héroes"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Doctor Strange en el Multiverso de la Locura _ Tráiler Oficial _ Doblado(720P_HD).mp4",
      "imagen": "/Doctor Strange.png",
      "banner": "/Doctor Strange_banner.png",
      "nombre": "Doctor Strange in the Multiverse of Madness",
@@ -275,7 +275,7 @@
      "genero": "Super Héroes"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Eternals _ Marvel Studios _ Teaser Tráiler Doblado(720P_HD).mp4",
      "imagen": "/Eternals.png",
      "banner": "/Eternals_banner.png",
      "nombre": "Eternals",
@@ -299,7 +299,7 @@
      "genero": "Super Héroes"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Guardianes de la Galaxia Vol. 3 _ Tráiler Oficial _ Doblado con Subtítulos Descriptivos(720P_HD).mp4",
      "imagen": "/Guardianes de la galaxia.png",
      "banner": "/Guardianes de la galaxia_banner.png",
      "nombre": "Guardianes de la Galaxia Vol.3",
@@ -324,7 +324,7 @@
      "genero": "Super Héroes"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Avengers_ Infinity War_ de Marvel Studios – Tráiler Oficial(720P_HD).mp4",
      "imagen": "/Infinity war.png",
      "banner": "/infinity war_banner.png",
      "nombre": "Avengers: Infinity War",
@@ -358,7 +358,7 @@
      "genero": "Super Héroes"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/shang-chi y la leyenda de los diez anillos.mp4",
      "imagen": "/shang chi.png",
      "banner": "/shang chi_banner.png",
      "nombre": "Shang-Chi y la leyenda de los diez anillos",
@@ -381,7 +381,7 @@
      "genero": "Super Héroes"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/The Marvels de Marvel Studios _ Tráiler Oficial _ Doblado con subtítulos descriptivos(720P_HD).mp4",
      "imagen": "/The marvels.png",
      "banner": "/The marvels_banner.png",
      "nombre": "The Marvels",
@@ -400,7 +400,7 @@
      "genero": "Super Héroes"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Thor_ Amor y Trueno de Marvel Studios _ Teaser Oficial _ Doblado(720P_HD).mp4",
      "imagen": "/Thor.png",
      "banner": "/Thor_banner.png",
      "nombre": "Thor: Love and Thunder",
@@ -420,7 +420,7 @@
      "genero": "Super Héroes"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Pantera Negra_ Wakanda Por Siempre _ Tráiler Oficial _ Doblado con subtítulos descriptivos(720P_HD).mp4",
      "imagen": "/Wakanda forever.png",
      "banner": "/Wakanda forever_banner.png",
      "nombre": "Black Panther: Wakanda Forever",
