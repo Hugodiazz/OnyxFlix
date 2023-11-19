@@ -102,6 +102,7 @@ public class Controlador {
         });
         escena3.getBtAtras().setOnMouseClicked(e->{
             reproductorMP4.getPeliculaReproduciendo().dispose();
+            escena3.getBtPlayPause().setGraphic(new ImageView(new Image("btPauseE3.png",34,34,false,false)));
             cambiarEscena(escena2.getScene());
         });
 
