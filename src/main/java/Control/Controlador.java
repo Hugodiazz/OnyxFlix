@@ -7,6 +7,8 @@ import View.Escena1;
 import View.Escena2;
 import View.Vista;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import View.Escena3;
 import javafx.util.Duration;
@@ -79,6 +81,11 @@ public class Controlador {
 
         escena3.getBtPlayPause().setOnMouseClicked(e ->{
             reproductorMP4.playPause();
+            if (reproductorMP4.getPeliculaReproduciendo().getStatus() == javafx.scene.media.MediaPlayer.Status.PLAYING){
+                escena3.getBtPlayPause().setGraphic(new ImageView(new Image("btPlayE3.png")));
+            }else {
+                escena3.getBtPlayPause().setGraphic(new ImageView(new Image("btPauseE3.png")));
+            }
         });
         escena3.getSlVolumen().valueProperty().addListener((observable, oldValue, newValue) -> {
             reproductorMP4.setVolumen(newValue.doubleValue() / 100.0);
