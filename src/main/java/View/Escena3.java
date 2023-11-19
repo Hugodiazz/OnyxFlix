@@ -48,12 +48,10 @@ public class Escena3 {
         this.stage= stage;
         String titulo = new String();
         this.stage.setTitle(titulo);
-        btPlayPause = new Button("Play/Pause");
-        slVolumen = new Slider(0, 100, 50);
         slTiempoDeReproduccion = new Slider();
         mediaView = new MediaView();
 
-        contenedorArriba = new HBox(30);
+        contenedorArriba = new HBox(20);
         contenedorArriba.setAlignment(Pos.CENTER_LEFT);
         contenedorArriba = getContenedorArriba();
 
@@ -82,6 +80,7 @@ public class Escena3 {
     public HBox getContenedorArriba() {
         ImageView ivAtras = new ImageView(new Image("btVolverAtrasE3.png"));
         btAtras = new Button();
+        btAtras.setPadding(new Insets(0,0,0,40));
         btAtras.setStyle("-fx-background-color: transparent; -fx-border-color: transparent");
         btAtras.setGraphic(ivAtras);
         tituloPelicula = new Label("Titulo de la pelicula");
@@ -101,7 +100,12 @@ public class Escena3 {
     }
 
     public HBox getControles(){
-        controles = new HBox(btPlayPause, slVolumen);
+        controles = new HBox();
+        btPlayPause = new Button();
+        btPlayPause.setGraphic(new ImageView(new Image("btPlayE3.png")));
+        btPlayPause.setStyle("-fx-background-color: transparent; -fx-border-color: transparent");
+        slVolumen = new Slider(0, 100, 50);
+        controles.getChildren().addAll(btPlayPause, slVolumen);
         controles.setAlignment(Pos.CENTER);
         return controles;
     }
@@ -134,6 +138,11 @@ public class Escena3 {
         });
         fadeTransition.play();
     }
+
+    public void setTituloPelicula(String tituloPelicula) {
+        this.tituloPelicula.setText(tituloPelicula);
+    }
+
     public Button getBtPlayPause() {
         return btPlayPause;
     }
