@@ -22,6 +22,7 @@ import javafx.util.Duration;
 import java.net.MalformedURLException;
 
 public class Escena3 {
+    private HBox contenedorVolumen;
     private HBox controles;
     private VBox contenedorMultimedia;
     private HBox contenedorSlider;
@@ -35,6 +36,8 @@ public class Escena3 {
     private Scene scene;
     private String titulo;
     private Button btAtras;
+    private Button btAdelantar;
+    private Button btAtrasar;
 
     public MediaView getMediaView() {
         return mediaView;
@@ -58,6 +61,9 @@ public class Escena3 {
         contenedorSlider = new HBox();
         contenedorSlider = getContenedorSlider();
 
+        contenedorVolumen = new HBox();
+
+
         controles = getControles();
 
         contenedorMultimedia = new VBox();
@@ -65,7 +71,6 @@ public class Escena3 {
 
         StackPane contenedor = new StackPane(mediaView,contenedorMultimedia);
         contenedor.setStyle("-fx-background-color: #000");
-        contenedor.setAlignment(Pos.CENTER);
 
         // Agregar manejadores de eventos al StackPane
         contenedor.setOnMouseEntered(this::mouseEntered);
@@ -93,26 +98,52 @@ public class Escena3 {
         VBox.setVgrow(contenedorSlider, Priority.ALWAYS);
         contenedorSlider.setPadding(new Insets(0,46,0,46));
         HBox.setHgrow(slTiempoDeReproduccion, Priority.ALWAYS);
-        contenedorSlider.setStyle("-fx-border-color: blue");
+        //contenedorSlider.setStyle("-fx-border-color: blue");
         contenedorSlider.setAlignment(Pos.BOTTOM_CENTER);
         contenedorSlider.getChildren().add(slTiempoDeReproduccion);
         return contenedorSlider;
     }
 
-    public HBox getControles(){
-        controles = new HBox();
+    public HBox getControles() {
+        controles = new HBox(0);
+        //controles.setStyle("-fx-border-color: green");
+
+        HBox controlesBox = new HBox(15);
+        controlesBox.setPadding(new Insets(0, 0, 0, 150));
+        controlesBox.setAlignment(Pos.CENTER_RIGHT);
+        HBox.setHgrow(controlesBox, Priority.ALWAYS);
+
         btPlayPause = new Button();
         btPlayPause.setGraphic(new ImageView(new Image("btPlayE3.png")));
         btPlayPause.setStyle("-fx-background-color: transparent; -fx-border-color: transparent");
+
+        btAdelantar = new Button();
+        btAdelantar.setGraphic(new ImageView(new Image("btAdelantarE3.png")));
+        btAdelantar.setStyle("-fx-background-color: transparent; -fx-border-color: transparent");
+
+        btAtrasar = new Button();
+        btAtrasar.setGraphic(new ImageView(new Image("btAtrasarE3.png")));
+        btAtrasar.setStyle("-fx-background-color: transparent; -fx-border-color: transparent");
+
+        controlesBox.getChildren().addAll(btAtrasar, btPlayPause, btAdelantar);
+
+        HBox contenedorSlVolumen = new HBox(5);  // VBox para el Slider
+        //contenedorSlVolumen.setStyle("-fx-border-color: yellow");
+        contenedorSlVolumen.setAlignment(Pos.CENTER);
+        HBox.setHgrow(contenedorSlVolumen, Priority.ALWAYS);
+        ImageView ivVolumen = new ImageView(new Image("iconoVolumenE3.png"));
+
         slVolumen = new Slider(0, 100, 50);
-        controles.getChildren().addAll(btPlayPause, slVolumen);
-        controles.setAlignment(Pos.CENTER);
+        contenedorSlVolumen.getChildren().addAll(ivVolumen,slVolumen);
+
+        controles.getChildren().addAll(controlesBox, contenedorSlVolumen);
+
         return controles;
     }
 
     public VBox getContenedorMultimedia() {
         contenedorMultimedia.getChildren().addAll(contenedorArriba, contenedorSlider, controles);
-        contenedorMultimedia.setStyle("-fx-border-color: red");
+       // contenedorMultimedia.setStyle("-fx-border-color: red");
         return contenedorMultimedia;
     }
 
