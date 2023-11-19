@@ -51,6 +51,7 @@ public class Controlador {
             try {
                 reproductorMP4.reproducirPelicula(escena2.getPelicula());
                 escena3.getMediaView().setMediaPlayer(reproductorMP4.getPeliculaReproduciendo());
+                escena3.setTituloPelicula(escena2.getPelicula().getNombre());
                 actualizarSlider();
                 cambiarEscena(escena3.getScene());
             } catch (URISyntaxException ex) {

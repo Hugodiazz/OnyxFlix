@@ -137,9 +137,6 @@ public class Escena1 {
         container.setPrefWidth(950);
         container.setPadding(new Insets(10, 40, 0, 40));
 
-        if(peliculas.size() > 1){
-            contenedorPrincipal.getChildren().remove(1);
-        }
         ScrollPane scrollPane = new ScrollPane();
         scrollPane.setFitToWidth(true); // Establecer en false para que no se expanda más allá del ancho del padre
         scrollPane.setId("scrollPane");
@@ -153,14 +150,30 @@ public class Escena1 {
         Label tituloV = new Label("Mi lista");
         tituloV.setId("EstiloGeneroEscena1");
 
-        for (Pelicula pelicula : peliculas) {
-            ImageView imageView = new ImageView(new Image(pelicula.getImagen(), 275, 174, false, true));
-            labelsContainer.getChildren().add(imageView);
-            labelsContainer.setStyle("-fx-border-color: black; ");
-            imageView.setOnMouseClicked(e->{
-                peliculaSeleccionada = pelicula;
-            });
+        if(peliculas.size() > 1){
+            contenedorPrincipal.getChildren().remove(1);
+            for (Pelicula pelicula : peliculas) {
+                ImageView imageView = new ImageView(new Image(pelicula.getImagen(), 275, 174, false, true));
+                labelsContainer.getChildren().add(imageView);
+                labelsContainer.setStyle("-fx-border-color: black; ");
+                imageView.setOnMouseClicked(e->{
+                    peliculaSeleccionada = pelicula;
+                });
+            }
+            scrollPane.setContent(labelsContainer);
+        }else {
+            for (Pelicula pelicula : peliculas) {
+                ImageView imageView = new ImageView(new Image(pelicula.getImagen(), 275, 174, false, true));
+                labelsContainer.getChildren().add(imageView);
+                labelsContainer.setStyle("-fx-border-color: black; ");
+                imageView.setOnMouseClicked(e->{
+                    peliculaSeleccionada = pelicula;
+                });
+            }
+            scrollPane.setContent(labelsContainer);
         }
+
+
         labelsContainer.addEventHandler(MouseEvent.MOUSE_PRESSED, event -> {
             xOffset = event.getSceneX();
         });
@@ -184,7 +197,7 @@ public class Escena1 {
             container.setPrefWidth(newValue.doubleValue());
         });
 
-        scrollPane.setContent(labelsContainer);
+
         container.getChildren().addAll(tituloV, scrollPane);
 
         contenedorPrincipal.getChildren().add(1, container);

@@ -60,7 +60,7 @@ public class ReproductorMP4{
     }
 
     public void setMiListaDeReproduccion(Pelicula nuevaPelicula){
-        if (!miListaDeReproduccion.contains(nuevaPelicula)) {
+        if (!miListaDeReproduccion.contains(nuevaPelicula)){
             this.miListaDeReproduccion.add(nuevaPelicula);
         }else{
             System.out.println("Ya existe en la lista");
