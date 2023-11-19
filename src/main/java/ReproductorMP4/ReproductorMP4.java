@@ -30,7 +30,7 @@ public class ReproductorMP4{
     public void reproducirPelicula(Pelicula pelicula) throws URISyntaxException {
         this.peliculaActual = pelicula;
 
-        Media media = new Media(new File("src/main/resources/SPIDER-MAN.mp4").toURI().toString());
+        Media media = new Media(new File(pelicula.getRuta()).toURI().toString());
         peliculaReproduciendo = new MediaPlayer(media);
         peliculaReproduciendo.play();
         peliculaReproduciendo.setVolume(volumen);

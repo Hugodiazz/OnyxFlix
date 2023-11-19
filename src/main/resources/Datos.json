@@ -1,6 +1,6 @@
  [
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/El Gato Con Botas 2_ El Último Deseo _ Tráiler Oficial (Universal Pictures) HD(720P_HD).mp4",
      "imagen": "/El gato con botas.png",
      "banner": "/El gato con botas_banner.png",
      "nombre": "El Gatos con Botas: el último deseo",
@@ -19,7 +19,7 @@
      "genero": "Animación"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/_Elementos de Disney y Pixar _ Tráiler Oficial _ Doblado(720P_HD).mp4",
      "imagen": "/Elementos.png",
      "banner": "/Elementos_banner.png",
      "nombre": "Elementos",
@@ -31,7 +31,7 @@
      "genero": "Animación"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Encanto _ Tráiler Oficial _ Disney _DisneyStudiosLA(720P_HD).mp4",
      "imagen": "/Encanto.png",
      "banner": "/Encanto_banner.png",
      "nombre": "Encanto",
@@ -51,7 +51,7 @@
      "genero": "Animación"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Garfield - Fuera de Casa _ Tráiler Oficial(720P_HD).mp4",
      "imagen": "/Garfield.png",
      "banner": "/Garfield_banner.png",
      "nombre": "The Garfield Movie",
@@ -71,7 +71,7 @@
      "genero": "Animación"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/IntensaMente 2 _ Tráiler Oficial _ Doblado con subtítulos descriptivos(720P_HD).mp4",
      "imagen": "/Intensamente 2.png",
      "banner": "/Intensamente 2_banner.png",
      "nombre": "Intensamente 2",
@@ -87,7 +87,7 @@
      "genero": "Animación"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Super Mario Bros. La Película - Tráiler Oficial (Universal Pictures) HD(720P_HD).mp4",
      "imagen": "/Mario Bros.png",
      "banner": "/Mario Bros_banner.png",
      "nombre": "Super Mario Bros: La pelicula",
@@ -111,7 +111,7 @@
      "genero": "Animación"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Minions_ Nace un Villano – Tráiler Oficial (Universal Pictures) HD(720P_HD).mp4",
      "imagen": "/Minions.png",
      "banner": "/minions_banner.png",
      "nombre": "Minions: nace un villano",
@@ -133,7 +133,7 @@
      "genero": "Animación"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Los Pingüinos de Madagascar _ Trailer 3 en Español (HD)(720P_HD).mp4",
      "imagen": "/Pinguinos de madagascar.png",
      "banner": "/Pinguinos de madagascar_banner.png",
      "nombre": "Pingüinos de Magascar",
@@ -155,7 +155,7 @@
      "genero": "Animación"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Pinocho de Guillermo del Toro _ Tráiler oficial _ Netflix(720P_HD).mp4",
      "imagen": "/Pinocho.png",
      "banner": "/Pinocho_banner.png",
      "nombre": "Pinocho de Guillermo del Toro",
@@ -180,7 +180,7 @@
      "genero": "Animación"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/TOY STORY 4 DE DISNEY_PIXAR – TRÁILER OFICIAL _2 (DOBLADO)(720P_HD).mp4",
      "imagen": "/Toy Story 4.png",
      "banner": "/Toy Story 4_banner.png",
      "nombre": "Toy Story 4",
