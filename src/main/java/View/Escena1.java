@@ -150,6 +150,7 @@ public class Escena1 {
         Label tituloV = new Label("Mi lista");
         tituloV.setId("EstiloGeneroEscena1");
 
+
         if(peliculas.size() > 1){
             contenedorPrincipal.getChildren().remove(1);
             for (Pelicula pelicula : peliculas) {

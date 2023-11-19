@@ -13,6 +13,7 @@ import javafx.util.Duration;
 
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
+import java.util.List;
 
 public class Controlador {
     private Stage stage;
@@ -60,12 +61,17 @@ public class Controlador {
         });
 
         escena2.getBtnAnadirMas().setOnMouseClicked(e->{
-            reproductorMP4.setMiListaDeReproduccion(escena2.getPelicula());
+            List<Pelicula> peliculas = reproductorMP4.getMiListaDeReproduccion();
+            if (!peliculas.contains(escena2.getPelicula())) {
+                reproductorMP4.setMiListaDeReproduccion(escena2.getPelicula());
+                escena1.createScrollPaneMiLista(reproductorMP4.getMiListaDeReproduccion());
+            }
+
             System.out.println("Peliculas en Lista");
             for (Pelicula pelicula: reproductorMP4.getMiListaDeReproduccion()){
                 System.out.println(pelicula.getNombre());
             }
-            escena1.createScrollPaneMiLista(reproductorMP4.getMiListaDeReproduccion());
+
         });
         escena3.getMediaView().setOnMouseClicked(e ->{
             reproductorMP4.playPause();
