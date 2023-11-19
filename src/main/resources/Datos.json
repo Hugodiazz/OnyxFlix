@@ -445,7 +445,7 @@
      "genero": "Super Héroes"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/ANNIE _ Trailer oficial en español(720P_HD).mp4",
      "imagen": "/Annie.png",
      "banner": "/Annie_banner.png",
      "nombre": "Annie",
@@ -463,7 +463,7 @@
      "genero": "Musical"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Cats – Tráiler Oficial (Universal Pictures) HD(720P_HD).mp4",
      "imagen": "/Cats.png",
      "banner": "/Cats_banner.png",
      "nombre": "Cats",
@@ -484,7 +484,7 @@
      "genero": "Musical"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/El gran showman _ Trailer 2 doblado _ Solo en cines(720P_HD).mp4",
      "imagen": "/El gran showman.png",
      "banner": "/El gran showman_banner.png",
      "nombre": "El gran Showman",
@@ -504,7 +504,7 @@
      "genero": "Musical"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/ELVIS_ Tráiler Oficial en Español Latino I _Tráiler(720P_HD).mp4",
      "imagen": "/Elvis.png",
      "banner": "/Elvis_banner.png",
      "nombre": "Elvis",
@@ -527,7 +527,7 @@
      "genero": "Musical"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/GREASE _ Trailer _ Paramount Movies(720P_HD).mp4",
      "imagen": "/Grase.png",
      "banner": "/Grase_banner.png",
      "nombre": "Grease",
@@ -544,7 +544,7 @@
      "genero": "Musical"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/La Ciudad de las Estrellas - La La Land - CITY OF STARS(720P_HD).mp4",
      "imagen": "/La la land.png",
      "banner": "/La la land_banner.png",
      "nombre": "La la land",
@@ -561,7 +561,7 @@
      "genero": "Musical"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/MAMMA MIA_ UNA Y OTRA VEZ - Tráiler Final (Universal Pictures) HD(720P_HD).mp4",
      "imagen": "/Mamma mia.png",
      "banner": "/Mamma mia_banner.png",
      "nombre": "Mamma mia! Una y otra vez",
@@ -585,7 +585,7 @@
      "genero": "Musical"
    },
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Matilda_ de Roald Dahl_ El musical _ Tráiler oficial _ Netflix(720P_HD).mp4",
      "imagen": "/Matilda.png",
      "banner": "/Matilda_banner.png",
      "nombre": "Matilda",
@@ -604,7 +604,7 @@
    },
 
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/tick_ tick...BOOM_ (EN ESPAÑOL) _ Tráiler oficial _ Netflix(720P_HD).mp4",
      "imagen": "/Tik tik bom.png",
      "banner": "/Tik tik bom_banner.png",
      "nombre": "Tick, Tick... Boom!",
@@ -624,7 +624,7 @@
    },
 
    {
-     "ruta": "/SPIDER-MAN.mp4",
+     "ruta": "src/main/resources/Vaselina_ El origen de las damas rosadas _ Trailer Oficial _ Paramount(720P_HD).mp4",
      "imagen": "/Vaselina.png",
      "banner": "/Vaselina_banner.png",
      "nombre": "Vaselina",
