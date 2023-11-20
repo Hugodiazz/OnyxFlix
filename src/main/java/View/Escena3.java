@@ -193,4 +193,12 @@ public class Escena3 {
     public Button getBtAtras() {
         return btAtras;
     }
+
+    public Button getBtAtrasar() {
+        return btAtrasar;
+    }
+
+    public Button getBtAdelantar() {
+        return btAdelantar;
+    }
 }

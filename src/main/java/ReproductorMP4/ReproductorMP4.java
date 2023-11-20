@@ -20,6 +20,7 @@ public class ReproductorMP4{
     private List<Pelicula> peliculaList;
     private int indiceEnLista;
     private List<Pelicula> miListaDeReproduccion = new ArrayList<>();
+    private List<Pelicula> recientesReproducidas = new ArrayList<>();
 
     public ReproductorMP4() {
         peliculaList = Collections.emptyList();
@@ -36,6 +37,10 @@ public class ReproductorMP4{
         peliculaReproduciendo = new MediaPlayer(media);
         peliculaReproduciendo.play();
         peliculaReproduciendo.setVolume(volumen);
+    }
+
+    public List<Pelicula> getRecientesReproducidas() {
+        return recientesReproducidas;
     }
 
     public void playPause(){
@@ -69,5 +74,9 @@ public class ReproductorMP4{
 
     public void eliminarPelicula(Pelicula pelicula) {
         miListaDeReproduccion.remove(pelicula);
+    }
+
+    public void setRecientesReproducidos(Pelicula pelicula){
+        this.recientesReproducidas.add(pelicula);
     }
 }

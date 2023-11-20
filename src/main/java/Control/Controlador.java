@@ -46,13 +46,19 @@ public class Controlador {
         }
 
         escena2.getBotonAtras().setOnMouseClicked(e ->{
+            escena1.setPeliculaSeleccionada(null);
             cambiarEscena(escena1.getScene());
         });
 
         escena2.getBtnPlay().setOnMouseClicked(e ->{
-            System.out.println("Reproduciendo pelicula chi cheñor.");
+            System.out.println("Reproduciendo pelicula: " + escena2.getPelicula().getNombre());
             try {
                 reproductorMP4.reproducirPelicula(escena2.getPelicula());
+                List<Pelicula> peliculas = reproductorMP4.getRecientesReproducidas();
+                if (!peliculas.contains(escena2.getPelicula())) {
+                    reproductorMP4.setRecientesReproducidos(escena2.getPelicula());
+                    escena1.createScrollPaneRecientesReproducidas(reproductorMP4.getRecientesReproducidas());
+                }
                 escena3.getMediaView().setMediaPlayer(reproductorMP4.getPeliculaReproduciendo());
                 escena3.setTituloPelicula(escena2.getPelicula().getNombre());
                 actualizarSlider();
@@ -67,11 +73,6 @@ public class Controlador {
             if (!peliculas.contains(escena2.getPelicula())) {
                 reproductorMP4.setMiListaDeReproduccion(escena2.getPelicula());
                 escena1.createScrollPaneMiLista(reproductorMP4.getMiListaDeReproduccion());
-            }
-
-            System.out.println("Peliculas en Lista");
-            for (Pelicula pelicula: reproductorMP4.getMiListaDeReproduccion()){
-                System.out.println(pelicula.getNombre());
             }
 
         });
@@ -105,7 +106,19 @@ public class Controlador {
             escena3.getBtPlayPause().setGraphic(new ImageView(new Image("btPauseE3.png",34,34,false,false)));
             cambiarEscena(escena2.getScene());
         });
+        escena3.getBtAdelantar().setOnMouseClicked(e->{
+            Duration actual = reproductorMP4.getPeliculaReproduciendo().getCurrentTime();
+            Duration aumentar = Duration.seconds(10);
+            Duration nuevoTiempo = actual.add(aumentar);
+            reproductorMP4.getPeliculaReproduciendo().seek(nuevoTiempo);
+        });
 
+        escena3.getBtAtrasar().setOnMouseClicked(e ->{
+            Duration actual = reproductorMP4.getPeliculaReproduciendo().getCurrentTime();
+            Duration disminuir = Duration.seconds(10);
+            Duration nuevoTiempo = actual.subtract(disminuir);
+            reproductorMP4.getPeliculaReproduciendo().seek(nuevoTiempo);
+        });
 
     }
 
