@@ -168,24 +168,24 @@ public class Escena2 {
 
         HBox infoDirectorPais = new HBox();
         //infoDirectorPais.setStyle("-fx-border-color: yellow");
-        Label getDirectorPelicula = new Label("Nombre del director");
-        getDirectorPelicula.setWrapText(true);
-        getDirectorPelicula.setId("EstiloTextoTituloPeliculaEscena2");
+        //Label getDirectorPelicula = new Label("Nombre del director");
+        //getDirectorPelicula.setWrapText(true);
+        //getDirectorPelicula.setId("EstiloTextoTituloPeliculaEscena2");
         getPaisPelicula = new Label();
         getPaisPelicula.setWrapText(true);
         getPaisPelicula.setId("EstiloTextoTituloPeliculaEscena2");
         HBox director = new HBox();
         HBox pais = new HBox();
-        director.getChildren().addAll(getDirectorPelicula);
+        //director.getChildren().addAll(getDirectorPelicula);
         pais.getChildren().addAll(getPaisPelicula);
         // Configurar alineación y expansión
         director.setAlignment(Pos.TOP_LEFT);
         pais.setAlignment(Pos.TOP_LEFT);
 
         // Configurar la expansión para que ocupen la mitad del infoDirectorPais
-        HBox.setHgrow(director, Priority.ALWAYS);
+        //HBox.setHgrow(director, Priority.ALWAYS);
         HBox.setHgrow(pais, Priority.ALWAYS);
-        infoDirectorPais.getChildren().addAll(director,pais);
+        infoDirectorPais.getChildren().addAll(pais);
 
         HBox infoProductoraAno = new HBox();
         getProductoraPelicula = new Label();
